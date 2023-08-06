@@ -2,7 +2,9 @@
 import Header from "../components/common/Header.astro"
 import Footer from "../components/common/Footer.astro"
 import H1 from "../components/common/atom/H1.astro"
+import H4 from "../components/common/atom/H4.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
+import { TEAM } from "../constants"
 ---
 
 <html lang="en">
@@ -56,6 +58,35 @@ import Paragraph from "../components/common/atom/Paragraph.astro"
 				<Paragraph
 					text="Everyone at Small Town Folk comes from different backgrounds and is equipped with more than one skill set. We don't pretend to have all the answers but we can promise that we'll leave no stone unturned in our quest to find that great idea. "
 				/>
+			</div>
+			<div class="grid grid-cols-3 gap-10 py-20">
+			{
+
+				TEAM.map( ( team ) => {
+
+					return (
+						<div class="">
+							<div class="w-full aspect-square bg-zinc-200">
+								<img
+									src={ team.image }
+									class="object fit w-full h-full"
+									alt={ team.name + "'s picture"}
+								/>
+							</div>
+							<div class="mt-4">
+								<H4
+									text={ team.name }
+								/>
+								<Paragraph
+									text={ team.description }
+								/>
+							</div>
+						</div>
+					)
+
+				})
+
+			}
 			</div>
 		</section>
 		<Footer />
