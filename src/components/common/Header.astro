@@ -1,12 +1,16 @@
 ---
 import NavigationItem from "./navigation/NavigationItem.astro"
 ---
-<header class="bg-white py-10">
+<header class="bg-white py-8">
     <div class="container max-w-7xl mx-auto flex justify-between items-center">
-        <a href="/">
-            <div>Small Talk Folk</div>
+        <a href="/" class="w-36">
+            <img
+                src="https://blupp.b-cdn.net/smalltownfolk/STF-02.png?width=300"
+                class="object-fit w-full h-full"
+                alt="Small Talk Folk's logo"
+            />
         </a>
-        <nav class="flex gap-12">
+        <nav class="flex gap-12 items-center">
             <NavigationItem
                 text="Work"
                 link="/work"
