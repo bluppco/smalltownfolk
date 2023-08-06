@@ -102,4 +102,36 @@ export const WORK = [{
     link: "amintiri",
     video_flag: false,
     video: ""
+},{
+    brand: "Fresh to Home",
+    category: ["Brand Communication","Packaging","UI/UX"],
+    description: "A celebration of freshness",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-freshtohome.jpg?quality=80",
+    link: "fresh-to-home",
+    video_flag: false,
+    video: ""
+},{
+    brand: "Nature & Thought",
+    category: ["Brand Identity","Brand Naming","Brand Strategy"],
+    description: "Ushering in thought to the supplement industry",
+    image: "https://blupp.b-cdn.net/smalltownfolk/n%26t-cover-mobile.jpg?quality=80",
+    link: "nature-and-thought",
+    video_flag: false,
+    video: ""
+},{
+    brand: "Societal Platform",
+    category: ["Brand Communication"],
+    description: "Aiding an understanding",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-societal-platform.png?quality=80",
+    link: "societal-platform",
+    video_flag: false,
+    video: ""
+},{
+    brand: "Telstra〡HPSE",
+    category: ["Employer Branding","Change Management"],
+    description: "Reimagining the power of internal brands",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-telstra-hpse.jpg?quality=80",
+    link: "telstra-hpse",
+    video_flag: false,
+    video: ""
 }]

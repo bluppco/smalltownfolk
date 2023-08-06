@@ -15,14 +15,14 @@ import H2 from "../../components/common/atom/H2.astro"
 	</head>
 	<body>
 		<Header />
-		<section class="container max-w-7xl mx-auto flex">
+		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex">
 			<div class="grid grid-cols-2 gap-8 w-full">
 			{
 				WORK.map( ( work ) => {
 
 					return (
 						<div>
-							<div>
+							<div class="h-96 w-full">
 								{
 
 									work.video_flag &&
@@ -42,7 +42,7 @@ import H2 from "../../components/common/atom/H2.astro"
 									!work.video_flag &&
 									<img
 										src={ work.image }
-										class="object-fit"
+										class="object-fit w-full h-full"
 										alt=""
 									/>
 
