@@ -75,12 +75,31 @@ export const WORK = [{
     category: ["Brand Strategy","Positioning","Brand Identity"],
     description: "Getting the internet back to its roots",
     image: "https://blupp.b-cdn.net/smalltownfolk/small-town-folk-beckn_1.png?quality=80",
+    link: "beckn",
     video_flag: false,
-    video: ""
+    video: "",
 },{
     brand: "Nutriventia",
     category: ["Brand Strategy","Brand Communication","UI/UX"],
+    description: "Nature, science and you",
     image: "",
+    link: "beckn",
     video_flag: true,
     video: "https://blupp.b-cdn.net/smalltownfolk/2077720757.mp4"
+},{
+    brand: "Yogabar",
+    category: ["Brand Communication","UI/UX"],
+    description: "The honest voice of healthy ingredients",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-yogabar.jpg?quality=80",
+    link: "yogabar",
+    video_flag: false,
+    video: ""
+},{
+    brand: "Amintiri",
+    category: ["Brand Strategy","Brand Communication","UI/UX"],
+    description: "Celebrating an identity",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-amintiri.jpg?quality=80",
+    link: "amintiri",
+    video_flag: false,
+    video: ""
 }]
