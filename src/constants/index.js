@@ -69,3 +69,18 @@ export const TEAM = [
     }
 
 ]
+
+export const WORK = [{
+    brand: "beckn",
+    category: ["Brand Strategy","Positioning","Brand Identity"],
+    description: "Getting the internet back to its roots",
+    image: "https://blupp.b-cdn.net/smalltownfolk/small-town-folk-beckn_1.png?quality=80",
+    video_flag: false,
+    video: ""
+},{
+    brand: "Nutriventia",
+    category: ["Brand Strategy","Brand Communication","UI/UX"],
+    image: "",
+    video_flag: true,
+    video: "https://blupp.b-cdn.net/smalltownfolk/2077720757.mp4"
+}]
