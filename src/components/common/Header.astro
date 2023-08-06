@@ -3,12 +3,26 @@ import NavigationItem from "./navigation/NavigationItem.astro"
 ---
 <header class="bg-white py-10">
     <div class="container max-w-7xl mx-auto flex justify-between items-center">
-        <div>Small Talk Folk</div>
+        <a href="/">
+            <div>Small Talk Folk</div>
+        </a>
         <nav class="flex gap-12">
-            <NavigationItem text="Work"/>
-            <NavigationItem text="About"/>
-            <NavigationItem text="Careers"/>
-            <NavigationItem text="Contact"/>
+            <NavigationItem
+                text="Work"
+                link="/work"
+            />
+            <NavigationItem
+                text="About"
+                link="/about"
+            />
+            <NavigationItem
+                text="Careers"
+                link="/careers"
+            />
+            <NavigationItem
+                text="Contact"
+                link="/contact"
+            />
         </nav>
     </div>
 </header>
