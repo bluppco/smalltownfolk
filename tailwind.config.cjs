@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-			  'karla': ['Karla', 'sans-serif']
+			  'karla': ['Karla', 'sans-serif'],
+			  'clarendon': ["clarendon-text-pro", "serif"]
 			},
 		},
 	},
