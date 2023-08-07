@@ -1,0 +1,46 @@
+---
+import NavigationItem from "./navigation/NavigationItem.astro"
+---
+<header class="bg-white fixed top-0 w-full bg-white z-20">
+    <section class="bg-black py-4 text-center">
+        <p class="text-white text-sm">
+            <span>This is a demo website by</span>
+            <a href="https://blupp.co" target="_blank" rel="nofollow noindex">
+                <span class="underline">Blupp Co</span>.
+            </a>
+            <span>You can check the codebase on</span>
+            <a href="https://github.com/bluppco/smalltownfolk" target="_blank" rel="nofollow noindex">
+                <span class="underline">Github</span>.
+            </a>
+        </p>
+    </section>
+    <section class="py-8">
+        <div class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex justify-between items-center">
+            <a href="/" class="w-36">
+                <img
+                    src="https://blupp.b-cdn.net/smalltownfolk/STF-02.png?width=300"
+                    class="object-fit w-full h-full"
+                    alt="Small Talk Folk's logo"
+                />
+            </a>
+            <nav class="flex gap-12 items-center">
+                <NavigationItem
+                    text="Work"
+                    link="/work"
+                />
+                <NavigationItem
+                    text="About"
+                    link="/about"
+                />
+                <NavigationItem
+                    text="Careers"
+                    link="/careers"
+                />
+                <NavigationItem
+                    text="Contact"
+                    link="/contact"
+                />
+            </nav>
+        </div>
+    </section>
+</header>

@@ -1,0 +1,99 @@
+---
+import Header from "../../components/common/Header.astro"
+import Footer from "../../components/common/Footer.astro"
+import { WORK } from "../../constants"
+import H2 from "../../components/common/atom/H2.astro"
+import Head from "../../components/common/Head.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex py-20">
+			<div class="grid grid-cols-2 gap-8 w-full">
+			{
+				WORK.map( ( work ) => {
+
+					return (
+						<a href={ "/work/" + work.link }>
+							<div>
+								<div class="h-96 w-full bg-zinc-200 relative">
+									{
+
+										work.video_flag &&
+										<video
+											loop={ true }
+											autoplay={ true }
+											muted={ true }
+											playsinline={ true }
+											preload="auto"
+											class="h-full w-full object-cover"
+										>
+											<source src={ work.video } type="video/mp4"/>
+										</video>
+									}
+									{
+
+										!work.video_flag &&
+										<img
+											src={ work.image }
+											class="object-fit w-full h-full"
+											alt=""
+										/>
+
+									}
+									{
+
+										work.award &&
+										<div class="absolute bottom-2 left-2 w-1/2">
+											<img
+												src={ work.award_image }
+												alt="award image"
+											/>
+										</div>
+									}
+								</div>
+								<div class="mt-4">
+									<H2
+										text={ work.brand }
+									/>
+								</div>
+								<div class="mt-4 flex gap-4 items-center">
+									{
+
+										work.category.map( ( category, category_item ) => {
+
+											if( category_item +1 < work.category.length )
+												return (
+													<Paragraph
+														text={ category }
+														small={ true }
+													/>
+													<div>•</div>
+												)
+											else
+												return (
+													<Paragraph
+														text={ category }
+														small={ true }
+													/>
+												)
+
+										})
+
+									}
+								</div>
+							</div>
+						</a>
+					)
+
+				})
+
+			}
+			</div>
+		</section>
+		<Footer />
+	</body>
+</html>

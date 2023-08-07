@@ -1,0 +1,71 @@
+---
+import Header from "../../components/common/Header.astro"
+import Footer from "../../components/common/Footer.astro"
+import { WORK } from "../../constants"
+import H2 from "../../components/common/atom/H2.astro"
+import H3 from "../../components/common/atom/H3.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+import Head from "../../components/common/Head.astro"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+		<div class="bg-orange-600 h-[68vh] w-full"></div>
+		<section class="container xl:max-w-6xl lg:max-w-6xl mx-auto flex py-20">
+            <div class="grid grid-cols-2">
+				<div class="space-y-2">
+                	<H2
+                    	text="Swiggy"
+                	/>
+					<p class="pt-14">CORE BRAND ASSETS</p>
+					<p>Brand Communication</p>
+				</div>
+				<div>
+					<H2
+                    	text="When I say food you say..."
+                	/>
+					<div class="py-10">
+						<Paragraph
+							text="Swiggy is a food ordering and delivery company based out of Bangalore, India. It's main function is to ensure ease of access to a number of restaurants, with or without online order capabilities. It positioned itself as a warrior against hunger in urban areas."
+							small={ false }
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container xl:max-w-6xl lg:max-w-6xl mx-auto py-20">
+			<div class="grid grid-cols-3 gap-10">
+				<div class="bg-gray-100 h-80 w-80 rounded-3xl"></div>
+				<div class="bg-gray-100 h-80 w-80 rounded-3xl"></div>
+				<div class="bg-gray-100 h-80 w-80 rounded-3xl"></div>
+				<div class="bg-gray-100 h-80 w-80 rounded-3xl"></div>
+				<div class="bg-gray-100 h-80 w-80 rounded-3xl"></div>
+				<div class="bg-gray-100 h-80 w-80 rounded-3xl"></div>
+			</div>
+			<div class="flex-col space-y-12 py-32">
+				<H2
+					text="Time fries when you're having fun"
+				/>
+				<Paragraph
+					text="We were commissioned by Swiggy to create a digital campaign to communicate these key positioning statements and engage consumers. Our aim was to make Swiggy synonymous with food. The best way to create this level of lasting mental association was to engage the customers senses. We decided to do this visually, creating a series of animated banner ads depicting mouth-watering food and unlocking the customer's imagination using situational comedy."
+					small={ false }
+				/>
+			</div>
+			<div class="bg-red-600 h-[60vh] w-full" ></div>
+			<div class="bg-red-500 h-[85vh] w-full my-32" ></div>
+			<div class="space-y-10">
+				<H3
+					text="Strike through hunger"
+				/>
+				<Paragraph
+					text="Here are some of the illustrations that were designed for the Swiggy explainer video which was used while launching the app on play store. We chose to experiment with the usage of a single line for the screen designs. It gives the animations a clean, modest and elegant style."
+					small={ false }
+				/>
+			</div>
+			<div class="bg-red-600 h-[60vh] w-full my-20" ></div>
+		</div>
+		<Footer />
+	</body>
+</html>

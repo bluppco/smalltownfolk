@@ -1,0 +1,89 @@
+---
+import Header from "../components/common/Header.astro"
+import Head from "../components/common/Head.astro"
+import Footer from "../components/common/Footer.astro"
+import H1 from "../components/common/atom/H1.astro"
+import H4 from "../components/common/atom/H4.astro"
+import Paragraph from "../components/common/atom/Paragraph.astro"
+import { TEAM } from "../constants"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
+			<div class="grid gap-4">
+				<H1
+					text="About us"
+				/>
+				<Paragraph
+					text="We started this journey because we believe in honest storytelling. Just like individuals, brands are meant to be unique. We help them find their voice and work with them to express it through strategy and design. "
+				/>
+				<Paragraph
+					text="Because we are highly committed to our work, we focus on constantly honing our skills by learning & unlearning through our environments and the people we work with. We are proud of our varied backgrounds and use our multidisciplinary skillsets across brand strategy, design and creative content, to focus solely on creating exceptional brand experiences. "
+				/>
+			</div>
+		</section>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
+			<div class="grid gap-4">
+				<H1
+					text="Our values"
+				/>
+				<Paragraph
+					text="Everyday, we strive to create the perfect environment to bring out the best in all of us. So we thought it would be a good idea to jot down what we believe in - our values. Needless to say, these are constantly evolving and growing just like we are! "
+				/>
+			</div>
+		</section>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
+			<div class="grid gap-4">
+				<H1
+					text="Our process"
+				/>
+				<Paragraph
+					text="At Small Town Folk, the client, the consumer and us are playing a continuous symphony using the below steps. We deeply believe that none of the following steps have to be followed in a linear fashion. We are continuously discovering, exploring, critiquing and sharing ideas with the 3 part triangle - the client, the consumer and us. "
+				/>
+			</div>
+		</section>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
+			<div class="grid gap-4">
+				<H1
+					text="Meet our team"
+				/>
+				<Paragraph
+					text="Everyone at Small Town Folk comes from different backgrounds and is equipped with more than one skill set. We don't pretend to have all the answers but we can promise that we'll leave no stone unturned in our quest to find that great idea. "
+				/>
+			</div>
+			<div class="grid grid-cols-3 gap-10 py-20">
+			{
+
+				TEAM.map( ( team ) => {
+
+					return (
+						<div class="">
+							<div class="w-full aspect-square bg-zinc-200">
+								<img
+									src={ team.image }
+									class="object fit w-full h-full"
+									alt={ team.name + "'s picture"}
+								/>
+							</div>
+							<div class="mt-4">
+								<H4
+									text={ team.name }
+								/>
+								<Paragraph
+									text={ team.description }
+								/>
+							</div>
+						</div>
+					)
+
+				})
+
+			}
+			</div>
+		</section>
+		<Footer />
+	</body>
+</html>

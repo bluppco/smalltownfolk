@@ -1,0 +1,28 @@
+---
+import Header from "../components/common/Header.astro"
+import Footer from "../components/common/Footer.astro"
+import H1 from "../components/common/atom/H1.astro"
+import Paragraph from "../components/common/atom/Paragraph.astro"
+import Head from "../components/common/Head.astro"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+		<div class="container max-w-7xl mx-auto grid grid-cols-2 py-20">
+			<div class="grid gap-4">
+				<H1
+					text="Let's work together."
+				/>
+				<Paragraph
+					text="We, at Small Town Folk, love saying hello. We have gotten some of our best projects by just walking up to people and having interesting conversations."
+				/>
+				<Paragraph
+					text="Say hello and watch as the world becomes a nicer, happier place."
+				/>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
