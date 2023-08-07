@@ -150,4 +150,114 @@ export const WORK = [{
     video: "",
     award: false,
     award_image: ""
-}]
+},{
+    brand: "Dish〡Sling",
+    category: ["Employer Branding","Change Management","EXPERIENTIAL DESIGN"],
+    description: "Souring towards change",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-dish-slingtv-07.jpg?quality=80",
+    link: "telstra-hpse",
+    video_flag: false,
+    video: "",
+    award: false,
+    award_image: ""
+}
+,{
+    brand: "Sriracha",
+    category: ["BRAND COMMUNICATION"],
+    description: "Welcome to the Orient",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-sriracha-02.jpg?quality=80",
+    link: "telstra-hpse",
+    video_flag: false,
+    video: "",
+    award: false,
+    award_image: ""
+}
+,{
+    brand: "Hopshaus",
+    category: ["PRODUCT IDENTITY","PACKAGING"],
+    description: "Welcome to the jungle",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-hopshaus-05.jpg?quality=80",
+    link: "telstra-hpse",
+    video_flag: false,
+    video: "",
+    award: false,
+    award_image: ""
+}
+,{
+    brand: "Omniactive",
+    category: ["REBRANDING","BRAND ARCHITECTURE","PRODUCT NAMING & IDENTITY"],
+    description: "Branding a partnership",
+    image: "",
+    link: "telstra-hpse",
+    video_flag: true,
+    video: "https://blupp.b-cdn.net/smalltownfolk/2074053514.mp4",
+    award: false,
+    award_image: ""
+}
+,{
+    brand: "Infogain",
+    category: ["BRAND COMMUNICATION","VISUAL STRATEGY"],
+    description: "Engineering business outcomes",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-infogain-02.jpg?quality=80",
+    link: "telstra-hpse",
+    video_flag: false,
+    video: "",
+    award: false,
+    award_image: ""
+}
+,{
+    brand: "Stoner",
+    category: ["BRAND COMMUNICATION","EXPERIENTIAL DESIGN"],
+    description: "Weeding out brand communication",
+    image: "",
+    link: "telstra-hpse",
+    video_flag: true,
+    video: "https://blupp.b-cdn.net/smalltownfolk/2071199690.mp4",
+    award: false,
+    award_image: ""
+}
+,{
+    brand: "Sanchez",
+    category: ["BRAND COMMUNICATION"],
+    description: "Let's taco 'bout it",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-sanchez.jpg?quality=80",
+    link: "telstra-hpse",
+    video_flag: false,
+    video: "",
+    award: false,
+    award_image: ""
+}
+,{
+    brand: "Societal Platform〡EkStep",
+    category: ["BRAND COMMUNICATION","CREATIVE STRATEGY"],
+    description: "Triggering an understanding",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-societal-platform-ekstep-02.jpg?quality=80",
+    link: "telstra-hpse",
+    video_flag: false,
+    video: "",
+    award: false,
+    award_image: ""
+}
+,{
+    brand: "Inventia",
+    category: ["BRAND SYSTEMS","PRODUCT NAMING & IDENTITY"],
+    description: "Pushing the vertical bar",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-inventia.jpg?quality=80",
+    link: "telstra-hpse",
+    video_flag: false,
+    video: "",
+    award: false,
+    award_image: ""
+}
+,{
+    brand: "Swiggy",
+    category: ["BRAND COMMUNICATION"],
+    description: "When I say food,you say..",
+    image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-swiggy.jpg?quality=80",
+    link: "telstra-hpse",
+    video_flag: false,
+    video: "",
+    award: false,
+    award_image: ""
+}
+]
