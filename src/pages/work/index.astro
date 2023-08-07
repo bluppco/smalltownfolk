@@ -3,16 +3,12 @@ import Header from "../../components/common/Header.astro"
 import Footer from "../../components/common/Footer.astro"
 import { WORK } from "../../constants"
 import H2 from "../../components/common/atom/H2.astro"
+import Head from "../../components/common/Head.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
+	<Head />
 	<body>
 		<Header />
 		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex py-20">
@@ -70,12 +66,18 @@ import H2 from "../../components/common/atom/H2.astro"
 
 										if( category_item +1 < work.category.length )
 											return (
-												<div class="uppercase text-sm">{ category }</div>
+												<Paragraph
+													text={ category }
+													small={ true }
+												/>
 												<div>•</div>
 											)
 										else
 											return (
-												<div class="uppercase text-sm">{ category }</div>
+												<Paragraph
+													text={ category }
+													small={ true }
+												/>
 											)
 
 									})
