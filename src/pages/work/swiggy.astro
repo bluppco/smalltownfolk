@@ -4,16 +4,11 @@ import Footer from "../../components/common/Footer.astro"
 import { WORK } from "../../constants"
 import H2 from "../../components/common/atom/H2.astro"
 import H3 from "../../components/common/atom/H3.astro"
+import Head from "../../components/common/Head.astro"
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
+	<Head />
 	<body>
 		<Header />
 		<div class="bg-orange-600 h-[68vh] w-full"></div>
