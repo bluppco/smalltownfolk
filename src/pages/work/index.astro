@@ -22,7 +22,7 @@ import H2 from "../../components/common/atom/H2.astro"
 
 					return (
 						<div>
-							<div class="h-96 w-full">
+							<div class="h-96 w-full bg-zinc-200 relative">
 								{
 
 									work.video_flag &&
@@ -46,6 +46,16 @@ import H2 from "../../components/common/atom/H2.astro"
 										alt=""
 									/>
 
+								}
+								{
+
+									work.award &&
+									<div class="absolute bottom-2 left-2 w-1/2">
+										<img
+											src={ work.award_image }
+											alt="award image"
+										/>
+									</div>
 								}
 							</div>
 							<div class="mt-4">

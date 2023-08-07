@@ -78,6 +78,8 @@ export const WORK = [{
     link: "beckn",
     video_flag: false,
     video: "",
+    award: true,
+    award_image: "https://blupp.b-cdn.net/smalltownfolk/cii-finalist.png"
 },{
     brand: "Nutriventia",
     category: ["Brand Strategy","Brand Communication","UI/UX"],
@@ -85,7 +87,9 @@ export const WORK = [{
     image: "",
     link: "beckn",
     video_flag: true,
-    video: "https://blupp.b-cdn.net/smalltownfolk/2077720757.mp4"
+    video: "https://blupp.b-cdn.net/smalltownfolk/2077720757.mp4",
+    award: true,
+    award_image: "https://blupp.b-cdn.net/smalltownfolk/cii-finalist.png"
 },{
     brand: "Yogabar",
     category: ["Brand Communication","UI/UX"],
@@ -93,7 +97,9 @@ export const WORK = [{
     image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-yogabar.jpg?quality=80",
     link: "yogabar",
     video_flag: false,
-    video: ""
+    video: "",
+    award: false,
+    award_image: ""
 },{
     brand: "Amintiri",
     category: ["Brand Strategy","Brand Communication","UI/UX"],
@@ -101,7 +107,9 @@ export const WORK = [{
     image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-amintiri.jpg?quality=80",
     link: "amintiri",
     video_flag: false,
-    video: ""
+    video: "",
+    award: false,
+    award_image: ""
 },{
     brand: "Fresh to Home",
     category: ["Brand Communication","Packaging","UI/UX"],
@@ -109,7 +117,9 @@ export const WORK = [{
     image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-freshtohome.jpg?quality=80",
     link: "fresh-to-home",
     video_flag: false,
-    video: ""
+    video: "",
+    award: false,
+    award_image: ""
 },{
     brand: "Nature & Thought",
     category: ["Brand Identity","Brand Naming","Brand Strategy"],
@@ -117,7 +127,9 @@ export const WORK = [{
     image: "https://blupp.b-cdn.net/smalltownfolk/n%26t-cover-mobile.jpg?quality=80",
     link: "nature-and-thought",
     video_flag: false,
-    video: ""
+    video: "",
+    award: false,
+    award_image: ""
 },{
     brand: "Societal Platform",
     category: ["Brand Communication"],
@@ -125,7 +137,9 @@ export const WORK = [{
     image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-societal-platform.png?quality=80",
     link: "societal-platform",
     video_flag: false,
-    video: ""
+    video: "",
+    award: false,
+    award_image: ""
 },{
     brand: "Telstra〡HPSE",
     category: ["Employer Branding","Change Management"],
@@ -133,5 +147,7 @@ export const WORK = [{
     image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-telstra-hpse.jpg?quality=80",
     link: "telstra-hpse",
     video_flag: false,
-    video: ""
+    video: "",
+    award: false,
+    award_image: ""
 }]
