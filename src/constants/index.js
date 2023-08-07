@@ -254,7 +254,7 @@ export const WORK = [{
     category: ["BRAND COMMUNICATION"],
     description: "When I say food,you say..",
     image: "https://blupp.b-cdn.net/smalltownfolk/tasveerien-swiggy.jpg?quality=80",
-    link: "telstra-hpse",
+    link: "swiggy",
     video_flag: false,
     video: "",
     award: false,
