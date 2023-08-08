@@ -1,0 +1,64 @@
+---
+import Header from "../../components/common/Header.astro"
+import Footer from "../../components/common/Footer.astro"
+import { WORK } from "../../constants"
+import H2 from "../../components/common/atom/H2.astro"
+import H3 from "../../components/common/atom/H3.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+import Head from "../../components/common/Head.astro"
+import MastHead from "../../components/work/MastHead.astro"
+import P from "../../components/common/atom/P.astro"
+import ImageBetweenText from "../../components/work/ImageBetweenText.astro"
+import Title1Text1 from "../../components/work/Title1Text1.astro"
+import ImageGrid2 from "../../components/work/ImageGrid2.astro"
+import ImageGrid3 from "../../components/work/ImageGrid3.astro"
+import FullImage from "../../components/work/FullImage.astro"
+import Image from "../../components/work/Image.astro"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+        <MastHead
+            L_title="Dish〡Sling"
+            L_points=
+            {[
+                "Brand identity",
+                "Employer branding",
+                "Experiential design",
+                "Brand Communication"
+            ]}
+           R_title="" 
+           R_description="Many organisations have become truly global in their operations to enable higher efficiencies and serve their customers better. This is possible because of digital transformation, but it’s easier said than done. Bringing in engineering practices that are the global standard isn’t just about adopting the latest practices in tech. It’s about bringing in a cultural change, a new way of thinking and approaching problems. The leadership at Dish was committed to driving this change and creating a world class engineering organisation. We were brought in to create a unified communication and design strategy to kick off and sustain this transformation program."
+        />
+        
+        <div class="container max-w-6xl mx-auto">
+            <ImageGrid2 />
+            <Title1Text1
+                title="Soaring towards change"
+                text="This change management program was coined 'Falcon', since speed and precision were to be the hallmark of the transformation."
+            />
+            <ImageGrid2 />
+            <Title1Text1
+                title="A bird's eye view"
+                text="Our first move was to create a bedrock for this transformational journey; a set of guiding principles that drove this push to change. Posters were designed to share these core values, each of which had a direct tie in to the larger transformation strategy. "
+            />
+        </div>
+        <FullImage />
+        <FullImage />
+        <div class="container max-w-6xl mx-auto">
+            <Title1Text1
+                title="Building anticipation"
+                text="Before the entire program was launched, we needed to generate curiosity and interest in everyone's minds. The best way to do this was to create fun teasers that left people giggling and wondering what was next. We used hints of wit to get everyone acquainted with the idea of change."
+            />
+            <Image />
+            <Title1Text1
+                title="Keeping our eyes turned skyward"
+                text="We used mailers as a medium to spread information and keep spirits up across the organisation. It began with awareness building campaigns like The Plastic Free Office and Power Conservation Campaigns that grew out of the overall falcon initiative. The mailers grew to include employee engagement and relevant updates in the company. During the Covid-19 pandemic in 2020, we sent out mailers to all employees working from home to improve moral and create a sense of community while remaining socially distant."
+            />
+            <Image />
+        </div>
+		<Footer />
+	</body>
+</html>
