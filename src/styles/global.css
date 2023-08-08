@@ -26,6 +26,6 @@ h5 {
 }
 p img {
 
-	@apply !object-cover;
+	@apply !object-cover bg-zinc-200;
 
 }
