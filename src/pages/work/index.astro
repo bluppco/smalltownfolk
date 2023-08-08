@@ -5,6 +5,7 @@ const posts_sorted = posts.sort((a, b) => a.data.order - b.data.order)
 import Header from "../../components/common/Header.astro"
 import Footer from "../../components/common/Footer.astro"
 import H2 from "../../components/common/atom/H2.astro"
+import H4 from "../../components/common/atom/H4.astro"
 import Head from "../../components/common/Head.astro"
 import Paragraph from "../../components/common/atom/Paragraph.astro"
 ---
@@ -19,9 +20,9 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 				posts_sorted.map( ( work ) => {
 
 					return (
-						<div>
+						<div class="">
 							<a href={ "/work/" + work.data.link }>
-								<div class="h-96 w-full bg-zinc-200 relative">
+								<div class="h-96 w-full bg-zinc-200 relative group">
 									{
 
 										work.data.video_flag &&
@@ -49,13 +50,21 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 									{
 
 										work.data.award &&
-										<div class="absolute bottom-2 left-2 w-1/2">
+										<div class="absolute bottom-2 left-2 w-1/2 z-30">
 											<img
 												src={ work.data.award_image }
 												alt="award image"
 											/>
 										</div>
 									}
+									<div class="absolute z-20 top-0 left-0 bg-black/60 w-full h-full opacity-0 hover:opacity-100 flex items-center justify-center">
+										<div class="p-12">
+											<H4
+												text={ work.data.description }
+												light={ true }
+											/>
+										</div>
+									</div>
 								</div>
 							</a>
 							<div class="mt-4">
