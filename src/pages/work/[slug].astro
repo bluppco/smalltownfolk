@@ -21,7 +21,14 @@ import "../../styles/global.css"
     <Head />
 	<body>
 		<Header />
-		<section class="container xl:max-w-6xl lg:max-w-6xl mx-auto py-20 mt-36">
+		<section class="mt-36 h-[70vh] w-full bg-zinc-300">
+			<img
+				src={ entry.data.image }
+				alt={ entry.data.brand + "'s work"}
+				class="w-full h-full object-center object-cover"
+			/>
+		</section>
+		<section class="container xl:max-w-6xl lg:max-w-6xl mx-auto py-20">
             <Content/>
         </section>
         <Footer />
