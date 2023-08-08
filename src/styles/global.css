@@ -26,6 +26,12 @@ h5 {
 }
 p img {
 
-	@apply !object-cover;
+	@apply !object-cover bg-zinc-200;
+
+}
+
+p a span.no_style {
+
+	@apply !no-underline;
 
 }
