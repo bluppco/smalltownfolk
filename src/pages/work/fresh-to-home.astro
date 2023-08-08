@@ -1,0 +1,121 @@
+---
+import Header from "../../components/common/Header.astro"
+import Footer from "../../components/common/Footer.astro"
+import { WORK } from "../../constants"
+import H2 from "../../components/common/atom/H2.astro"
+import H3 from "../../components/common/atom/H3.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+import Head from "../../components/common/Head.astro"
+import MastHead from "../../components/work/MastHead.astro"
+import P from "../../components/common/atom/P.astro"
+import ImageBetweenText from "../../components/work/ImageBetweenText.astro"
+import Title1Text1 from "../../components/work/Title1Text1.astro"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+        <MastHead
+           L_title="Fresh to Home"
+           L_points=
+           {[
+            "Brand Communication",
+            "Packaging Design",
+            "Website UI/UX" 
+            ]}
+           R_title="A celebration of freshness" 
+           R_description="An accidental meeting at a cafe led to being entrusted with the task of making customers aware that Fresh to Home delivered the freshest fish and meat to the consumer’s doorstep. The brand strategy was, to create an image to match the product’s USP - freshness!"
+        />
+        <div class="bg-blue-400 h-screen"></div>
+        <div class="container max-w-6xl mx-auto">
+            <div class="my-36">
+                <Title1Text1
+                    title="A fresh new identity"
+                    text="Working on creating a visual language for the brand that needed to cut across mediums and campaigns, the new logo emerged fresh and green. The water colour identity allowed the brand to have an authentic ‘fresh’ feel. The usage of water colour patches, strokes and bubbled typography that created a visual language which reflected the light-hearted feel of the brand. "
+                />           
+            <div class="flex gap-8">
+                <div class="bg-purple-400 h-96 w-[40vw]">IMAGE HERE</div>
+                <div class="bg-purple-400 h-96 w-64">IMAGE HERE</div>
+            </div>
+            </div>
+            <Title1Text1
+                    title="Bangalore by the bay "
+                    text="As part of one of the earliest exercises we created a campaign in association with the Taj Vivanta. It was called - 'Bangalore by the Bay' - the freshest seafood festival in town."
+                />
+            <div class="bg-blue-400 h-[50vh]"></div>
+        </div>
+        <div class="bg-pink-400 h-screen"></div>
+        <div class="container max-w-6xl mx-auto">
+            <Paragraph
+                text="The festival brought the ﬁnest selection of seafood, caught and cooked to perfection. Every week, the regional theme would change as we set sail to different coastal and culinary destinations. With themes changing every week, communication pieces were crafted to reflect the spirit of the region and the food."
+            />
+            <div class="bg-blue-400 h-[50vh]"></div>
+            <Title1Text1
+                    title="Festival of fish"
+                    text="Matsya Mela is a one of a kind fresh fish festival organised by Fresh to Home across locations. The idea was to create an identity that was self explanatory and ensured high recall. Here, we've extended the visual identity using water colour imagery and pastel colours."
+                />
+            <div class="grid grid-cols-2 gap-10 my-12">
+                <div class="bg-blue-900 h-[50vh] w-full"></div>
+                <div class="bg-blue-900 h-[50vh] w-full"></div>
+            </div>
+            <Title1Text1
+                    title="Reimagining tradition"
+                    text="Fresh to Home ventured out into a new market with the freshest Idli dosa batter. We wanted to ensure that the packaging reflected the natural and traditional origins of the product. Hence, we created an identity based around the pestle and mortar, the age old method of grinding batter."
+                />
+        </div>
+        <div class="bg-blue-400 h-screen"></div>
+        <!-- <div class="bg-yellow-400 h-[80vh]"></div>
+        <ImageBetweenText
+            title1="Packaged happiness"
+            title2="A bake down memory lane"
+            text1={["Employing the rich colours in our brand manual, we created packaging using a minimal design style with aureate accents. Our main goal was to find the ideal mix of form and function. This is usually the first time the customer physically interacts with the brand and we made sure that the packaging not only looked aesthetically pleasing but was also easy to handle and transport."]}
+            text2={["A truly decadent brand deserves its own coffee table book. We were inspired by Amintiri's tagline, 'A bake down memory lane'. It talks about the brand's philosophy and allows the reader to step into the world of Amintiri. The book uses the language of storytelling to talk about Amintiri's use of traditional baking techniques, historic recipes and and high-quality ingredients. Add that to some enticing photography and you've got a understandably enviable coffee table book."]}
+        />
+        <div class="bg-purple-400 h-[80vh]"></div>
+        <div class="container max-w-6xl mx-auto">
+            <div class="my-24 flex flex-col gap-8">
+                <H3
+                    text="One-stop shop"
+                />
+                <Paragraph
+                    text="We designed the Amintiri website to ensure that it wasn't just visually arresting but easy to use as well. We blended form and function so as to ensure a three-click segue from opening the website to celebration. A clean layout was used to ensure that the beautiful product photos were the hero. Once the website was live, online sales and conversion rated began to drive the brand."
+                />
+            </div>
+            <div class="bg-pink-400 h-[80vh]"></div>
+        </div>
+        <div class="bg-red-600 h-[80vh] mt-4"></div>
+        <div class="container max-w-6xl mx-auto">
+            <div class="my-28 flex flex-col gap-8">
+                <H3
+                    text="Staying Connected"
+                />
+                <Paragraph
+                    text="How do we stand apart in a space that’s already so crowded with content, especially food related content? In order to overcome this, we decided to center our creatives around well-curated photography. These are a few of the posts that we designed."
+                    />
+            </div>
+                <div class="bg-pink-400 h-[70vh]"></div>
+                <div class="grid grid-cols-3 gap-10 my-12">
+                    <div class="bg-blue-400 h-[50vh]"></div>
+                    <div class="bg-blue-400 h-[50vh]"></div>
+                    <div class="bg-blue-400 h-[50vh]"></div>
+                </div>
+            </div>   
+            <div class="bg-red-600 h-[80vh]"></div>
+            <div class="container max-w-6xl mx-auto">
+                <div class="my-28 flex flex-col gap-8">
+                    <H3
+                        text="Places of Celebration"
+                    />
+                    <Paragraph
+                        text="Whether you were at the store or at an outdoor location, the consumer always received an authentic Amintiri experience. Keeping richness and decadence in mind, we created a menu, point-of-sale creatives and on-ground posters."
+                        />
+                </div>
+                <div class="grid grid-cols-2 gap-10 mb-12">
+                    <div class="bg-blue-400 h-[70vh]"></div>
+                    <div class="bg-blue-400 h-[70vh]"></div>
+                </div>
+            </div> -->
+		<Footer />
+	</body>
+</html>
