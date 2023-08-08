@@ -24,3 +24,8 @@ h5 {
 	@apply !text-xl text-zinc-900 font-clarendon;
 
 }
+p img {
+
+	@apply !object-cover;
+
+}
