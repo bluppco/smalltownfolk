@@ -1,0 +1,31 @@
+p {
+
+	@apply text-xl font-['Karla','sans-serif'] text-black;
+
+}
+p a {
+
+	@apply underline text-xl font-['Karla','sans-serif'] font-semibold;
+
+}
+h2 {
+
+	@apply !text-4xl font-semibold text-zinc-900 font-clarendon;
+
+}
+h3 {
+
+	@apply !text-3xl text-zinc-900 font-clarendon;
+
+}
+
+h5 {
+
+	@apply !text-xl text-zinc-900 font-clarendon;
+
+}
+p img {
+
+	@apply !object-cover;
+
+}
