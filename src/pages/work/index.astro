@@ -1,9 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 const posts = await getCollection('work');
+const posts_sorted = posts.sort((a, b) => a.data.order - b.data.order)
 import Header from "../../components/common/Header.astro"
 import Footer from "../../components/common/Footer.astro"
-import { WORK } from "../../constants"
 import H2 from "../../components/common/atom/H2.astro"
 import Head from "../../components/common/Head.astro"
 import Paragraph from "../../components/common/atom/Paragraph.astro"
@@ -16,15 +16,15 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex py-20 mt-36">
 			<div class="grid grid-cols-2 gap-8 w-full">
 			{
-				posts.map( ( work ) => {
+				posts_sorted.map( ( work ) => {
 
 					return (
-						<a href={ "/work/" + work.link }>
-							<div>
+						<div>
+							<a href={ "/work/" + work.data.link }>
 								<div class="h-96 w-full bg-zinc-200 relative">
 									{
 
-										work.video_flag &&
+										work.data.video_flag &&
 										<video
 											loop={ true }
 											autoplay={ true }
@@ -33,14 +33,14 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 											preload="auto"
 											class="h-full w-full object-cover"
 										>
-											<source src={ work.video } type="video/mp4"/>
+											<source src={ work.data.video } type="video/mp4"/>
 										</video>
 									}
 									{
 
-										!work.video_flag &&
+										!work.data.video_flag &&
 										<img
-											src={ work.image }
+											src={ work.data.image }
 											class="object-fit w-full h-full"
 											alt=""
 										/>
@@ -48,23 +48,47 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 									}
 									{
 
-										work.award &&
+										work.data.award &&
 										<div class="absolute bottom-2 left-2 w-1/2">
 											<img
-												src={ work.award_image }
+												src={ work.data.award_image }
 												alt="award image"
 											/>
 										</div>
 									}
 								</div>
-								<div class="mt-4">
-									<H2
-										text={ work.brand }
-									/>
-								</div>
-
+							</a>
+							<div class="mt-4">
+								<H2
+									text={ work.data.brand }
+								/>
 							</div>
-						</a>
+							<div class="mt-4 flex gap-4 items-center">
+								{
+
+									work.data.category.map( ( category, category_item ) => {
+
+										if( category_item +1 < work.data.category.length )
+											return (
+												<Paragraph
+													text={ category }
+													small={ true }
+												/>
+												<div>•</div>
+											)
+										else
+											return (
+												<Paragraph
+													text={ category }
+													small={ true }
+												/>
+											)
+
+									})
+
+								}
+							</div>
+						</div>
 					)
 
 				})
@@ -75,4 +99,3 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 		<Footer />
 	</body>
 </html>
-
