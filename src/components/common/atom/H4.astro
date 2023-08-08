@@ -1,4 +1,4 @@
 ---
-const { text } = Astro.props
+const { light, text } = Astro.props
 ---
-<h4 class="text-lg font-semibold text-zinc-900 font-clarendon">{ text }</h4>
+<h4 class={`${light ? "text-zinc-50" : "text-zinc-900"} ?} text-2xl font-semibold font-clarendon`}>{ text }</h4>
