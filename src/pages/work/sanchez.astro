@@ -1,0 +1,45 @@
+---
+import Header from "../../components/common/Header.astro"
+import Footer from "../../components/common/Footer.astro"
+import { WORK } from "../../constants"
+import H2 from "../../components/common/atom/H2.astro"
+import H3 from "../../components/common/atom/H3.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+import Head from "../../components/common/Head.astro"
+import MastHead from "../../components/work/MastHead.astro"
+import P from "../../components/common/atom/P.astro"
+import ImageBetweenText from "../../components/work/ImageBetweenText.astro"
+import Title1Text1 from "../../components/work/Title1Text1.astro"
+import ImageGrid2 from "../../components/work/ImageGrid2.astro"
+import ImageGrid3 from "../../components/work/ImageGrid3.astro"
+import FullImage from "../../components/work/FullImage.astro"
+import Image from "../../components/work/Image.astro"
+import ImageGrid4 from "../../components/work/ImageGrid4.astro"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+        <MastHead
+            L_title="Sanchez"
+            L_points=
+            {[
+                "Brand Communication",
+            ]}
+           R_title="Lets taco 'bout it" 
+           R_description="Sanchez is a well known Tex-Mex restaurant in Bangalore, India. They had recently launched the new Burrito Bowl Power Lunch and were looking for cost-effective ways to promote it. An outdoor hoarding seemed like the perfect fit. We were tasked with extending their brand identity in term of illustration styles. We wanted the hoarding to not only be appealing but also maximise traction and footfall."
+        />
+        <FullImage />
+        <div class="container max-w-6xl mx-auto">
+            <Image />
+            <Title1Text1
+                title="A fiesta of colour"
+                text="Sanchez had always been a bright brand. Drawing inspiration from the bright colour palette associated with Mexican culture and art, we created flat vector food illustrations. We used these illustrations as the hero and created an appealing four part outdoor hoarding that fit the brand as we had re-imagined."
+            />
+            <ImageGrid3 />
+        </div>
+        <FullImage />
+		<Footer />
+	</body>
+</html>
