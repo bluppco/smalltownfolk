@@ -1,0 +1,55 @@
+---
+import Header from "../../components/common/Header.astro"
+import Footer from "../../components/common/Footer.astro"
+import { WORK } from "../../constants"
+import H2 from "../../components/common/atom/H2.astro"
+import H3 from "../../components/common/atom/H3.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+import Head from "../../components/common/Head.astro"
+import MastHead from "../../components/work/MastHead.astro"
+import P from "../../components/common/atom/P.astro"
+import ImageBetweenText from "../../components/work/ImageBetweenText.astro"
+import Title1Text1 from "../../components/work/Title1Text1.astro"
+import ImageGrid2 from "../../components/work/ImageGrid2.astro"
+import ImageGrid3 from "../../components/work/ImageGrid3.astro"
+import FullImage from "../../components/work/FullImage.astro"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+        <MastHead
+           L_title="Societal Platform"
+           L_points={["Brand Communication"]}
+           R_title="Aiding an understanding" 
+           R_description="Societal Platform creates a shared infrastructure that lets every actor in a society participate in social innovation. At its core, Societal Platform helps share social innovations and solutions to larger audiences who have similar problems and resources. Once the actors involved have a broad understanding of the concept the next step is implementation. This is where the design principles came into play. These principles are spread across data, technology, program management, network etc, and act as the ultimate guide to imbibe the philosophies of a societal platform. As the actors involved come from different backgrounds and industries, we decided to use illustrations and visual aids to help get these concepts across. Keeping the new brand language in line, we used rich colours and strong fonts in a meaningful and impactful way. "
+        />
+        
+        <div class="container max-w-6xl mx-auto">
+            <ImageGrid3 />
+        </div>
+        <FullImage /> 
+        <div class="container max-w-6xl mx-auto">
+            <Title1Text1
+                title="Data Design Principles"
+                text="Data in isolation consists of bits and bytes. When one views data is relation to humans, it unlocks a whole world of possibilities. We wanted to capture this world in the form of a visual illustration. We designed the cover to portray the larger than life impact of the human element with regard to data using flat fill illustrations and a pictorial representation of data."
+            />
+        </div>
+        <FullImage />
+        <div class="container max-w-6xl mx-auto">
+            <Title1Text1
+                title="Technology Design Principles"
+                text="A museum holds a collection of items that at face value, don’t look like much. The true meaning is unlocked only when you understand the significance of these items. The same goes for technology, we seldom appreciate the power that it holds. We designed the cover to showcase the historic and social significance of technology using a museum exhibit as a metaphor."
+            />
+        </div>
+        <FullImage />
+        <div class="container max-w-6xl mx-auto">
+            <Title1Text1
+                title="Programme Design Principles"
+                text="When solving societal problems, it is crucial that we design our programmes such that they work at scale. These principles are the fundamental guidelines that help create an architecture for solving complex problems. The article cover was designed as a metaphorical representation for problem solving using helping hands found in different parts of the society."
+            />
+        </div>          
+		<Footer />
+	</body>
+</html>

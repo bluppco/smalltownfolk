@@ -1,0 +1,67 @@
+---
+import Header from "../../components/common/Header.astro"
+import Footer from "../../components/common/Footer.astro"
+import { WORK } from "../../constants"
+import H2 from "../../components/common/atom/H2.astro"
+import H3 from "../../components/common/atom/H3.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+import Head from "../../components/common/Head.astro"
+import MastHead from "../../components/work/MastHead.astro"
+import P from "../../components/common/atom/P.astro"
+import ImageBetweenText from "../../components/work/ImageBetweenText.astro"
+import Title1Text1 from "../../components/work/Title1Text1.astro"
+import ImageGrid2 from "../../components/work/ImageGrid2.astro"
+import ImageGrid3 from "../../components/work/ImageGrid3.astro"
+import FullImage from "../../components/work/FullImage.astro"
+import Image from "../../components/work/Image.astro"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+        <MastHead
+            L_title="Omniactive"
+            L_points=
+            {[
+                "Brand Architecture",
+                "Brand Guidelines",
+                "Brand Identity",
+                "Vertical Naming",
+            ]}
+           R_title="Branding a partnership" 
+           R_description=" The nutraceutical market is one of the fastest growing industries in the economy right now. Mergers and acquisitions make branding and product differentiation an important need in the industry. Omniactive was no different."
+        />
+        <FullImage />
+        <div class="container max-w-6xl mx-auto">
+            <Title1Text1
+                title="On the right Xtracs"
+                text="'Xtracs' was created using the phonetics for the word 'Extracts'. We wanted to convey the range of herbal extracts on offer with a sharp and simple name. Xtracts is powerful and to the point. It sparks a direct mental connect to the industry. When creating the logo we expanded the Omniactive brand identity, especially their brand colours and design elements."
+            />
+        </div>
+        <FullImage />
+        <div class="container max-w-6xl mx-auto">
+            <Title1Text1
+                title="Olixr of life"
+                text="The name 'Olixr' comes from Elixir. In folklore, the elixir of life was an alchemic preparation believed to be capable of prolonging life. The name and the meaning hold great significance as we are talking about the neutraceutical industry. We used a minimalist typography style and created mnemonic that became the hero. The mnemonic adds in to establish the botanical product line and carries a crisp tone to it."
+            />
+        </div>
+        <FullImage />
+        <div class="container max-w-6xl mx-auto">
+            <Title1Text1
+                title="Ogments to reality"
+                text="The name 'Ogments' is derived from the word 'augment' which means to enhance. This name is a direct play on the augmented range of herbal extracts in powder form. The name is easy to say and links directly to the overall use of the products in this vertical. The brand colours and the 'O' were extended to create the design identity of this vertical."
+            />
+            <Image />
+        </div>
+        <div class="container max-w-6xl mx-auto">
+            <Title1Text1
+                title="Visuals and Branding"
+                text="As we created a renewed visual language for Omniactive, we decided to use solid colours and typography as a key strength. We decided to play with the all the brand colours, using negative space and selective shading usage to ensure that the design was clean yet strong."
+            />
+            <ImageGrid2 />
+        </div>
+        <FullImage />
+		<Footer />
+	</body>
+</html>
