@@ -1,0 +1,49 @@
+---
+import Header from "../../components/common/Header.astro"
+import Footer from "../../components/common/Footer.astro"
+import { WORK } from "../../constants"
+import H2 from "../../components/common/atom/H2.astro"
+import H3 from "../../components/common/atom/H3.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+import Head from "../../components/common/Head.astro"
+import MastHead from "../../components/work/MastHead.astro"
+import P from "../../components/common/atom/P.astro"
+import ImageBetweenText from "../../components/work/ImageBetweenText.astro"
+import Title1Text1 from "../../components/work/Title1Text1.astro"
+import ImageGrid2 from "../../components/work/ImageGrid2.astro"
+import ImageGrid3 from "../../components/work/ImageGrid3.astro"
+import FullImage from "../../components/work/FullImage.astro"
+import Image from "../../components/work/Image.astro"
+---
+
+<html lang="en">
+	<Head />
+	<body>
+		<Header />
+        <MastHead
+            L_title="Sriracha"
+            L_points=
+            {[
+                "Brand Communication"
+            ]}
+           R_title="Welcome to the Orient" 
+           R_description="Sriracha boasts of one of the finest Pan-asian menus in Bangalore. The restaurant serviced a wide range of patrons. We were tasked with creating a retail-uplift campaign that would do justice to this menu and clientele."
+        />
+        
+        <div class="container max-w-6xl mx-auto">
+            <ImageGrid2 />
+        </div>
+        <FullImage />
+        <div class="container max-w-6xl mx-auto">
+            <Title1Text1
+                title="Maki-ng an impression"
+                text="Our first move was to create a bedrock for this transformational journey; a set of guiding principles that drove this push to change. Posters were designed to share these core values, each of which had a direct tie in to the larger transformation strategy. "
+            />
+            <ImageGrid3 />
+            <ImageGrid3 />
+        </div>
+        <FullImage />
+        </div>
+		<Footer />
+	</body>
+</html>
