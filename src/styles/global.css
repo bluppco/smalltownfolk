@@ -29,3 +29,9 @@ p img {
 	@apply !object-cover bg-zinc-200;
 
 }
+
+p a span.no_style {
+
+	@apply !no-underline;
+
+}
