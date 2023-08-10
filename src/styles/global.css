@@ -8,9 +8,14 @@ p a {
 	@apply underline text-xl font-['Karla','sans-serif'] font-semibold;
 
 }
+h1 {
+
+	@apply !text-5xl font-semibold text-black font-clarendon;
+
+}
 h2 {
 
-	@apply !text-4xl font-semibold text-zinc-900 font-clarendon;
+	@apply !text-4xl font-semibold text-black font-clarendon;
 
 }
 h3 {
@@ -26,7 +31,7 @@ h5 {
 }
 p img {
 
-	@apply !object-cover bg-zinc-200;
+	@apply !object-cover w-full;
 
 }
 
