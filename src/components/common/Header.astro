@@ -1,5 +1,6 @@
 ---
 import NavigationItem from "./navigation/NavigationItem.astro"
+const { pathname } = Astro.url
 ---
 <header class="bg-white fixed top-0 w-full bg-white z-50 !h-36">
     <section class="bg-black py-4 text-center">
@@ -27,18 +28,22 @@ import NavigationItem from "./navigation/NavigationItem.astro"
                 <NavigationItem
                     text="Work"
                     link="/work"
+                    highlight={ pathname === "/work" ? true : false }
                 />
                 <NavigationItem
                     text="About"
                     link="/about"
+                    highlight={ pathname === "/about" ? true : false }
                 />
                 <NavigationItem
                     text="Careers"
                     link="/careers"
+                    highlight={ pathname === "/careers" ? true : false }
                 />
                 <NavigationItem
                     text="Contact"
                     link="/contact"
+                    highlight={ pathname === "/contact" ? true : false }
                 />
             </nav>
         </div>

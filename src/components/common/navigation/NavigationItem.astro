@@ -1,12 +1,13 @@
 ---
 const {
 
+    highlight,
     link,
-    text
+    text,
 
 } = Astro.props
 ---
 <a href={ link } class="group">
-    <div class="font-bold text-sm font-karla uppercase !tracking-wide">{ text }</div>
-    <div class="h-1 w-0 group-hover:w-full bg-primary transition-width duration-200 ease-in"/>
+    <p class="font-bold text-sm font-karla uppercase tracking-[.25em]">{ text }</p>
+    <div class={`${highlight?"w-full bg-black":"w-0 bg-primary group-hover:w-full"} h-1 transition-width duration-200 ease-in`}/>
 </a>
