@@ -1,17 +1,60 @@
 ---
 import H4 from "./atom/H4.astro"
 ---
-<footer class="bg-zinc-200 py-10">
+<footer class="bg-footer py-40 font-karla">
     <div class="container max-w-7xl mx-auto grid gap-10">
         <div class="flex justify-between w-full">
-            <div class="w-56">
+            <div>
                 <H4
-                    text={ "Let's create something valuable together."}
+                    text={ "Let's create something"}
+                />
+                <H4
+                    text={ "valuable together."}
                 />
             </div>
-            <div>
-                icons
+            <div class="flex gap-2">
+                <a href="mailto:avinash@smalltownfolk.com" rel="noindex nofollow" target="_blank">
+                    <div>
+                        <img
+                            src="/email.svg"
+                            class="w-6 h-6"
+                        />
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/thesmalltownfolk/" rel="noindex nofollow" target="_blank">
+                    <div>
+                        <img
+                            src="/instagram.svg"
+                            class="w-6 h-6"
+                        />
+                    </div>
+                </a>
+                <a href="https://vimeo.com/tasveerien" rel="noindex nofollow"  target="_blank">
+                    <div>
+                        <img
+                            src="/vimeo.svg"
+                            class="w-6 h-6"
+                        />
+                    </div>
+                </a>
+                <a href="https://www.behance.net/smalltownfolk" rel="noindex nofollow"  target="_blank">
+                    <div>
+                        <img
+                            src="/behance.svg"
+                            class="w-6 h-6"
+                        />
+                    </div>
+                </a>
+                <a href="https://medium.com/@smalltownfolk" rel="noindex nofollow"  target="_blank">
+                    <div>
+                        <img
+                            src="/medium.svg"
+                            class="w-6 h-6"
+                        />
+                    </div>
+                </a>
             </div>
+
         </div>
         <div class="flex justify-between">
             <div class="grid gap-2">
@@ -26,9 +69,13 @@ import H4 from "./atom/H4.astro"
             </div>
         </div>
         <div class="flex gap-4">
-            <div>Freesources</div>
+            <a href="https://www.smalltownfolk.com/freesource-fridays" rel="noindex nofollow"  target="_blank">
+                <div>Freesources</div>
+            </a>
             <div>•</div>
-            <div>Blog</div>
+            <a href="https://medium.com/@smalltownfolk" rel="noindex nofollow"  target="_blank">
+                <div>Blog</div>
+            </a>
         </div>
     </div>
 </footer>
