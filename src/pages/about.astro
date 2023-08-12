@@ -12,7 +12,7 @@ import { TEAM } from "../constants"
 	<Head />
 	<body>
 		<Header />
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20 mt-36">
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20 mt-36">
 			<div class="grid gap-4">
 				<H1
 					text="About us"
@@ -25,7 +25,7 @@ import { TEAM } from "../constants"
 				/>
 			</div>
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20">
 			<div class="grid gap-4">
 				<H1
 					text="Our values"
@@ -35,7 +35,7 @@ import { TEAM } from "../constants"
 				/>
 			</div>
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20">
 			<div class="grid gap-4">
 				<H1
 					text="Our process"
@@ -45,7 +45,7 @@ import { TEAM } from "../constants"
 				/>
 			</div>
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20">
 			<div class="grid gap-4">
 				<H1
 					text="Meet our team"
@@ -54,7 +54,7 @@ import { TEAM } from "../constants"
 					text="Everyone at Small Town Folk comes from different backgrounds and is equipped with more than one skill set. We don't pretend to have all the answers but we can promise that we'll leave no stone unturned in our quest to find that great idea. "
 				/>
 			</div>
-			<div class="grid grid-cols-3 gap-10 py-20">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-10 py-20">
 			{
 
 				TEAM.map( ( team ) => {
