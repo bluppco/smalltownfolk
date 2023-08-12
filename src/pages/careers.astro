@@ -4,25 +4,21 @@ import Footer from "../components/common/Footer.astro"
 import H1 from "../components/common/atom/H1.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
 import Head from "../components/common/Head.astro"
+import { Content as CareersContent } from '../content/pages/Careers.md';
+import "../styles/global.css"
 ---
 
 <html lang="en">
 	<Head />
 	<body>
-		<Header />
-		<div class="container max-w-7xl mx-auto grid grid-cols-2 py-20 mt-36">
-			<div class="grid gap-4">
-				<H1
-					text="Grow with us"
-				/>
-				<Paragraph
-					text="We're always looking for driven and curious folk to be a part of our team. If you're interested in any of the roles listed below, please submit your portfolio and CV to careers@smalltownfolk.com using the job title as a reference in your subject line. We will write back if we see you as a fit. Since we're a small team, we hope you understand that we may not always be able to write back in case otherwise."
-				/>
-				<Paragraph
-					text="We usually do a preliminary shortlist, after which we reach out to you for a quick chat over the phone. If this goes well for both of us, we invite you to meet with us either physically or virtually to present one of your projects to our team, followed by an interview with the team-lead to get to know you better. "
-				/>
+		<section class="min-h-[60vh]">
+			<Header />
+			<div class="container max-w-7xl mx-auto grid grid-cols-2 py-40 mt-36">
+				<div class="grid gap-4">
+					<CareersContent />
+				</div>
 			</div>
-		</div>
+		</section>
 		<Footer />
 	</body>
 </html>
