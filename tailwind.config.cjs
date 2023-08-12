@@ -10,7 +10,10 @@ module.exports = {
 			},
 			colors: {
 				"primary": "#F0E15C"
-			}
+			},
+			transitionProperty: {
+                'width': 'width'
+            },
 		}
 	},
 	plugins: [],
