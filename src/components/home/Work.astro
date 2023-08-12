@@ -10,7 +10,7 @@ const {
 } = Astro.props
 ---
 <a href={ "/work/" + link }>
-    <div class={`${large?"h-[640px]":"h-96"} w-full bg-zinc-200 relative`}>
+    <div class={`h-96 ${large?"md:h-[640px]":"h-96" } w-full bg-zinc-200 relative`}>
         <img
             src={ image }
             class="object-cover h-full w-full"

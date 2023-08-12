@@ -5,7 +5,7 @@ import H6 from "../common/atom/H6.astro"
 import Paragraph from "../common/atom/Paragraph.astro"
 import { SERVICES } from "../../constants"
 ---
-<div class="grid grid-cols gap-20 py-20">
+<div class="grid grid-cols p-4 md:p-0 gap-20 md:py-20">
     <div class="flex flex-col gap-4">
         <H1
             text="Strategy + Creative"
@@ -20,14 +20,14 @@ import { SERVICES } from "../../constants"
             light={ true }
         />
     </div>
-    <div class="grid grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8">
         <div>
             <H2
                 text="Services"
                 primary={ true }
             />
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-2">
             {
 
                 SERVICES[0].map( ( service ) => {
@@ -59,9 +59,16 @@ import { SERVICES } from "../../constants"
             }
         </div>
     </div>
-    <div class="">
+    <div class="hidden md:block">
         <img
-            src="https://blupp.b-cdn.net/smalltownfolk/smalltownfolk-clients.png"
-            class="object-fit"
+            src="https://blupp.b-cdn.net/smalltownfolk/smalltownfolk-clients.png?quality=100"
+            class="object-fit w-full"
         />
+    </div>
+    <div class="block md:hidden">
+        <img
+            src="https://blupp.b-cdn.net/smalltownfolk/smalltownfolk-clients-m.png?quality=100"
+            class="object-fit w-full"
+        />
+    </div>
 </div>
