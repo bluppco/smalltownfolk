@@ -1,18 +1,24 @@
 ---
-import Header from "../components/common/Header.astro"
+import Header from "../components/common/Header.jsx"
 import Head from "../components/common/Head.astro"
 import Footer from "../components/common/Footer.astro"
 import H1 from "../components/common/atom/H1.astro"
 import H4 from "../components/common/atom/H4.astro"
+import H6 from "../components/common/atom/H6.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
 import { TEAM } from "../constants"
+import Values from "../components/about/Values.astro"
+import OurProcess from "../components/about/OurProcess.astro"
 ---
 
 <html lang="en">
 	<Head />
 	<body>
-		<Header />
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20 mt-36">
+		<Header
+			pathname= { Astro.url.pathname }
+			client:load
+		/>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 !py-20 mt-36">
 			<div class="grid gap-4">
 				<H1
 					text="About us"
@@ -25,27 +31,13 @@ import { TEAM } from "../constants"
 				/>
 			</div>
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20">
-			<div class="grid gap-4">
-				<H1
-					text="Our values"
-				/>
-				<Paragraph
-					text="Everyday, we strive to create the perfect environment to bring out the best in all of us. So we thought it would be a good idea to jot down what we believe in - our values. Needless to say, these are constantly evolving and growing just like we are! "
-				/>
-			</div>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:!py-20">
+			<Values />
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20">
-			<div class="grid gap-4">
-				<H1
-					text="Our process"
-				/>
-				<Paragraph
-					text="At Small Town Folk, the client, the consumer and us are playing a continuous symphony using the below steps. We deeply believe that none of the following steps have to be followed in a linear fashion. We are continuously discovering, exploring, critiquing and sharing ideas with the 3 part triangle - the client, the consumer and us. "
-				/>
-			</div>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:!py-20">
+			<OurProcess />
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20">
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 !py-20">
 			<div class="grid gap-4">
 				<H1
 					text="Meet our team"
