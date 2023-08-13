@@ -1,4 +1,4 @@
 ---
 const { text, small, light } = Astro.props
 ---
-<p class={`text-lg ${ small ? "text-base" : "md:text-xl"} ${light?"text-white": "text-zinc-900"} !leading-8 font-karla`}>{ text }</p>
+<p class={`!text-base md:text-lg ${ small ? "text-base" : "text-xl"} ${light?"text-white": "text-zinc-900"} !leading-8 font-karla`}>{ text }</p>

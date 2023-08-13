@@ -6,14 +6,14 @@ const Header = ( props ) => {
     const [ displayNavigation, updateDisplayNavigation ] = React.useState( false )
 
     return (
-        <header className="bg-white fixed top-0 w-full z-50 !h-36">
-            <section className="bg-black py-4 text-center">
+        <header className="bg-white fixed top-0 w-full z-50">
+            <section className="bg-black py-4 text-center px-4 md:px-0">
                 <p className="text-white text-sm !font-system">
-                    <span>This is a demo website by</span>
+                    <span>This is a demo website by </span>
                     <a href="https://blupp.co" target="_blank" rel="nofollow noindex" className="no_style">
                         <span className="no_style !text-sm underline">Blupp Co</span>.
                     </a>
-                    <span>You can check the codebase on</span>
+                    <span>You can check the codebase on </span>
                     <a href="https://github.com/bluppco/smalltownfolk" target="_blank" rel="nofollow noindex" className="no_style">
                         <span className="no_style !text-sm underline">Github</span>.
                     </a>
