@@ -37,7 +37,13 @@ p img {
 
 p a span.no_style {
 
-	@apply !no-underline;
+	@apply !text-sm font-normal;
+
+}
+
+p a.no_style {
+
+	@apply !no-underline !text-sm font-normal font-system;
 
 }
 
