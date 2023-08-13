@@ -18,7 +18,7 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 			client:load
 		/>
 		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex py-20 mt-36">
-			<div class="grid grid-cols-2 gap-8 w-full">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full p-4 md:p-0">
 			{
 				posts_sorted.map( ( work ) => {
 
@@ -75,7 +75,7 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 									text={ work.data.brand }
 								/>
 							</div>
-							<div class="mt-4 flex gap-4 items-center">
+							<div class="mt-4 flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center">
 								{
 
 									work.data.category.map( ( category, category_item ) => {
@@ -86,7 +86,7 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 													text={ category }
 													small={ true }
 												/>
-												<div>•</div>
+												<div class="hidden md:block">•</div>
 											)
 										else
 											return (
