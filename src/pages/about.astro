@@ -8,6 +8,7 @@ import H6 from "../components/common/atom/H6.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
 import { TEAM } from "../constants"
 import Values from "../components/about/Values.astro"
+import OurProcess from "../components/about/OurProcess.astro"
 ---
 
 <html lang="en">
@@ -27,20 +28,13 @@ import Values from "../components/about/Values.astro"
 				/>
 			</div>
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 !py-20">
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:!py-20">
 			<Values />
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20">
-			<div class="grid gap-4">
-				<H1
-					text="Our process"
-				/>
-				<Paragraph
-					text="At Small Town Folk, the client, the consumer and us are playing a continuous symphony using the below steps. We deeply believe that none of the following steps have to be followed in a linear fashion. We are continuously discovering, exploring, critiquing and sharing ideas with the 3 part triangle - the client, the consumer and us. "
-				/>
-			</div>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:!py-20">
+			<OurProcess />
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 py-20">
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 !py-20">
 			<div class="grid gap-4">
 				<H1
 					text="Meet our team"
