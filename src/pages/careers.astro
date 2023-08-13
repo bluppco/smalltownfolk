@@ -2,10 +2,14 @@
 import Header from "../components/common/Header.astro"
 import Footer from "../components/common/Footer.astro"
 import H1 from "../components/common/atom/H1.astro"
+import H2 from "../components/common/atom/H2.astro"
+import H4 from "../components/common/atom/H4.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
 import Head from "../components/common/Head.astro"
-import { Content as CareersContent } from '../content/pages/Careers.md';
 import "../styles/global.css"
+import { getCollection } from 'astro:content';
+const openings = await getCollection('openings');
+const openings_sorted = openings.sort((a, b) => a.data.order - b.data.order)
 ---
 
 <html lang="en">
@@ -15,7 +19,49 @@ import "../styles/global.css"
 			<Header />
 			<div class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:grid-cols-2 md:py-40 mt-36">
 				<div class="grid gap-4">
-					<CareersContent />
+					<H1
+						text="Grow with us"
+					/>
+					<p class="leading-8 font-karla text-black">We're always looking for driven and curious folk to be a part of our team. If you're interested in any of the roles listed below, please submit your portfolio and CV to <b class="!font-bold">careers@smalltownfolk.com</b> using the job title as a reference in your subject line. We will write back if we see you as a fit. Since we're a small team, we hope you understand that we may not always be able to write back in case otherwise. </p>
+					<p class="leading-8 font-karla text-black">We usually do a preliminary shortlist, after which we reach out to you for a quick chat over the phone. If this goes well for both of us, we invite you to meet with us either physically or virtually to present one of your projects to our team, followed by an interview with the team-lead to get to know you better. </p>
+				</div>
+			</div>
+			<div class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:py-40">
+				<div class="grid gap-4">
+					<H2
+						text="Open Roles"
+					/>
+					<div class="grid grid-cols-2 gap-8">
+						{
+
+							openings_sorted.map( ( opening ) => {
+
+								return (
+								<div class="flex flex-col gap-4">
+									<H4
+										text={ opening.data.title }
+									/>
+									<Paragraph
+										text={ opening.data.description }
+									/>
+								</div>
+
+								)
+
+							})
+
+						}
+					</div>
+				</div>
+			</div>
+			<div class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:grid-cols-2 md:py-20">
+				<div class="grid gap-4">
+					<H2
+						text="Don't see a match?"
+					/>
+					<Paragraph
+						text="If you're a freelance designer, copywriter, illustrator or animator, write to us with your details and we'll be in touch if we have a project for you."
+					/>
 				</div>
 			</div>
 		</section>
