@@ -1,5 +1,5 @@
 ---
-import Header from "../components/common/Header.astro"
+import Header from "../components/common/Header.jsx"
 import Footer from "../components/common/Footer.astro"
 import H1 from "../components/common/atom/H1.astro"
 import H2 from "../components/common/atom/H2.astro"
@@ -16,7 +16,10 @@ const openings_sorted = openings.sort((a, b) => a.data.order - b.data.order)
 	<Head />
 	<body>
 		<section class="min-h-[60vh]">
-			<Header />
+			<Header
+				pathname= { Astro.url.pathname }
+				client:load
+			/>
 			<div class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:grid-cols-2 md:py-40 mt-36">
 				<div class="grid gap-4">
 					<H1

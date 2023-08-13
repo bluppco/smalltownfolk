@@ -1,5 +1,5 @@
 ---
-import Header from "../components/common/Header.astro"
+import Header from "../components/common/Header.jsx"
 import Head from "../components/common/Head.astro"
 import Footer from "../components/common/Footer.astro"
 import H1 from "../components/common/atom/H1.astro"
@@ -14,7 +14,10 @@ import OurProcess from "../components/about/OurProcess.astro"
 <html lang="en">
 	<Head />
 	<body>
-		<Header />
+		<Header
+			pathname= { Astro.url.pathname }
+			client:load
+		/>
 		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 !py-20 mt-36">
 			<div class="grid gap-4">
 				<H1
