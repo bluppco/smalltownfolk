@@ -5,7 +5,7 @@ import Head from "../components/common/Head.astro"
 import Works from "../components/home/Works.astro"
 import Strategy from "../components/home/Strategy.astro"
 import BehindLens from "../components/home/BehindLens.astro"
-import Introduction from "../components/home/Introduction.astro"
+import Introduction from "../components/home/Introduction.jsx"
 ---
 
 <html lang="en">
@@ -16,7 +16,7 @@ import Introduction from "../components/home/Introduction.astro"
 			client:load
 		/>
 		<section class="mt-36 container xl:max-w-7xl lg:max-w-6xl mx-auto py-20">
-			<Introduction />
+			<Introduction client:load/>
 		</section>
 		<section class="mt-36 container xl:max-w-7xl lg:max-w-6xl mx-auto py-20">
 			<Works />
