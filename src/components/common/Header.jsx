@@ -64,7 +64,7 @@ const Header = ( props ) => {
                     {
 
                         !displayNavigation &&
-                        <div onClick={ ()=> updateDisplayNavigation( true ) } className="w-6 h-6">
+                        <div onClick={ ()=> updateDisplayNavigation( true ) } className="w-6 h-6 block md:hidden">
                             <img
                                 src="/menu.svg"
                                 className="w-full h-full"

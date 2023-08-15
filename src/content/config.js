@@ -31,9 +31,23 @@ const workCollection = defineCollection({
 	})
 
 })
+const teamCollection = defineCollection({
+
+	schema: z.object({
+
+		description: z.string(),
+		image: z.string(),
+		live: z.boolean(),
+		name: z.string(),
+		order: z.number(),
+
+	})
+
+})
 export const collections = {
 
 	"openings": openingsCollection,
+	"team": teamCollection,
 	"work": workCollection,
 
 }
