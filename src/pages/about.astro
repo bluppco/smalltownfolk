@@ -1,4 +1,8 @@
 ---
+import { getCollection } from 'astro:content'
+let team = await getCollection('team')
+team = team.sort((a, b) => a.data.order - b.data.order)
+team = team.filter( ( item ) => item.data.live )
 import Header from "../components/common/Header.jsx"
 import Head from "../components/common/Head.astro"
 import Footer from "../components/common/Footer.astro"
@@ -6,7 +10,6 @@ import H1 from "../components/common/atom/H1.astro"
 import H4 from "../components/common/atom/H4.astro"
 import H6 from "../components/common/atom/H6.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
-import { TEAM } from "../constants"
 import Values from "../components/about/Values.astro"
 import OurProcess from "../components/about/OurProcess.astro"
 ---
@@ -49,22 +52,22 @@ import OurProcess from "../components/about/OurProcess.astro"
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-10 py-20">
 			{
 
-				TEAM.map( ( team ) => {
+				team.map( ( team ) => {
 
 					return (
 						<div class="flex flex-col gap-4">
 							<div class="w-full aspect-square bg-zinc-200">
 								<img
-									src={ team.image }
+									src={ team.data.image }
 									class="object fit w-full h-full"
-									alt={ team.name + "'s picture"}
+									alt={ team.data.name + "'s picture"}
 								/>
 							</div>
 							<H4
-								text={ team.name }
+								text={ team.data.name }
 							/>
 							<Paragraph
-								text={ team.description }
+								text={ team.data.description }
 							/>
 						</div>
 					)
