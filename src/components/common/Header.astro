@@ -28,22 +28,22 @@ const { pathname } = Astro.url
                 <NavigationItem
                     text="Work"
                     link="/work"
-                    highlight={ pathname === "/work" ? true : false }
+                    highlight={ pathname === "/work" || pathname === "/work/" ? true : false }
                 />
                 <NavigationItem
                     text="About"
                     link="/about"
-                    highlight={ pathname === "/about" ? true : false }
+                    highlight={ pathname === "/about" || pathname === "/about/" ? true : false }
                 />
                 <NavigationItem
                     text="Careers"
                     link="/careers"
-                    highlight={ pathname === "/careers" ? true : false }
+                    highlight={ pathname === "/careers" || pathname === "/careers/" ? true : false }
                 />
                 <NavigationItem
                     text="Contact"
                     link="/contact"
-                    highlight={ pathname === "/contact" ? true : false }
+                    highlight={ pathname === "/contact" || pathname === "/contact/" ? true : false }
                 />
             </nav>
             <div class="flex flex-col gap-2">
