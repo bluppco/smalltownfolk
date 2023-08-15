@@ -1,8 +1,11 @@
 ---
-import Header from "../../components/common/Header.astro"
+import { getCollection } from 'astro:content';
+const posts = await getCollection('work');
+const posts_sorted = posts.sort((a, b) => a.data.order - b.data.order)
+import Header from "../../components/common/Header.jsx"
 import Footer from "../../components/common/Footer.astro"
-import { WORK } from "../../constants"
 import H2 from "../../components/common/atom/H2.astro"
+import H4 from "../../components/common/atom/H4.astro"
 import Head from "../../components/common/Head.astro"
 import Paragraph from "../../components/common/atom/Paragraph.astro"
 ---
@@ -10,19 +13,22 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 <html lang="en">
 	<Head />
 	<body>
-		<Header />
-		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex py-20">
-			<div class="grid grid-cols-2 gap-8 w-full">
+		<Header
+			pathname= { Astro.url.pathname }
+			client:load
+		/>
+		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex py-20 mt-36">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full p-4 md:p-0">
 			{
-				WORK.map( ( work ) => {
+				posts_sorted.map( ( work ) => {
 
 					return (
-						<a href={ "/work/" + work.link }>
-							<div>
-								<div class="h-96 w-full bg-zinc-200 relative">
+						<div class="">
+							<a href={ "/work/" + work.data.link }>
+								<div class="h-96 w-full bg-zinc-200 relative group">
 									{
 
-										work.video_flag &&
+										work.data.video_flag &&
 										<video
 											loop={ true }
 											autoplay={ true }
@@ -31,62 +37,70 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 											preload="auto"
 											class="h-full w-full object-cover"
 										>
-											<source src={ work.video } type="video/mp4"/>
+											<source src={ work.data.video } type="video/mp4"/>
 										</video>
 									}
 									{
 
-										!work.video_flag &&
+										!work.data.video_flag &&
 										<img
-											src={ work.image }
-											class="object-fit w-full h-full"
+											src={ work.data.image }
+											class="object-cover w-full h-full"
 											alt=""
 										/>
 
 									}
 									{
 
-										work.award &&
-										<div class="absolute bottom-2 left-2 w-1/2">
+										work.data.award &&
+										<div class="absolute bottom-2 left-2 w-1/2 z-30">
 											<img
-												src={ work.award_image }
+												src={ work.data.award_image }
 												alt="award image"
 											/>
 										</div>
 									}
+									<div class="absolute z-20 top-0 left-0 bg-black/60 w-full h-full opacity-0 hover:opacity-100 flex items-center justify-center">
+										<div class="p-12">
+											<H4
+												text={ work.data.description }
+												light={ true }
+											/>
+										</div>
+									</div>
 								</div>
-								<div class="mt-4">
-									<H2
-										text={ work.brand }
-									/>
-								</div>
-								<div class="mt-4 flex gap-4 items-center">
-									{
-
-										work.category.map( ( category, category_item ) => {
-
-											if( category_item +1 < work.category.length )
-												return (
-													<Paragraph
-														text={ category }
-														small={ true }
-													/>
-													<div>•</div>
-												)
-											else
-												return (
-													<Paragraph
-														text={ category }
-														small={ true }
-													/>
-												)
-
-										})
-
-									}
-								</div>
+							</a>
+							<div class="mt-4">
+								<H2
+									text={ work.data.brand }
+								/>
 							</div>
-						</a>
+							<div class="mt-2 md:mt-4 flex flex-col md:flex-row gap-1 md:gap-4 items-start md:items-center">
+								{
+
+									work.data.category.map( ( category, category_item ) => {
+
+										if( category_item +1 < work.data.category.length )
+											return (
+												<Paragraph
+													text={ category }
+													small={ true }
+												/>
+												<div class="hidden md:block">•</div>
+											)
+										else
+											return (
+												<Paragraph
+													text={ category }
+													small={ true }
+												/>
+											)
+
+									})
+
+								}
+							</div>
+						</div>
 					)
 
 				})

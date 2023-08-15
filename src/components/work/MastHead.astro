@@ -1,0 +1,37 @@
+---
+import H2 from "../../components/common/atom/H2.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+const { L_title, R_title, L_points, R_description} = Astro.props
+---
+<div class="bg-green-600 h-[85vh] w-full"></div>
+	<section class="container xl:max-w-6xl lg:max-w-6xl mx-auto flex my-28">
+        <div class="grid grid-cols-2">
+			<div class="space-y-2">
+                <H2
+					text={ L_title }
+                />
+				
+				<p class="pt-12 font-bold">CORE BRAND ASSETS</p>
+				{
+
+					L_points?.map( (point) => {
+		
+						return (
+							<p>{ point }</p>
+						)
+		
+					})
+		
+				}
+			</div>
+			<div class="flex flex-col gap-8">
+				<H2
+                    text={ R_title }
+                />
+				<Paragraph
+                    text={ R_description }
+                />
+            </div>
+		</div>
+    </section>
+	

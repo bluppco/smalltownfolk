@@ -1,0 +1,64 @@
+p {
+
+	@apply text-lg md:text-xl font-['Karla','sans-serif'] text-black;
+
+}
+p a {
+
+	@apply underline text-xl font-['Karla','sans-serif'] font-semibold;
+
+}
+h1 {
+
+	@apply !text-3xl md:!text-5xl font-semibold text-black font-clarendon;
+
+}
+h2 {
+
+	@apply !text-2xl md:!text-4xl font-semibold text-black font-clarendon;
+
+}
+h3 {
+
+	@apply !text-3xl text-zinc-900 font-clarendon;
+
+}
+
+h5 {
+
+	@apply !text-xl text-zinc-900 font-clarendon;
+
+}
+p img {
+
+	@apply !object-cover w-full;
+
+}
+
+p a span.no_style {
+
+	@apply !text-sm font-normal;
+
+}
+
+p a.no_style {
+
+	@apply !no-underline !text-sm font-normal font-system;
+
+}
+
+ul {
+
+	@apply !list-disc !pl-8 text-base md:text-lg mb-2;
+
+}
+ol {
+
+	@apply !list-decimal !pl-8 text-base md:text-lg mb-2;
+
+}
+li {
+
+	@apply text-base md:text-lg text-zinc-800;
+
+}

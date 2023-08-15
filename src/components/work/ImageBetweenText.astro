@@ -1,0 +1,44 @@
+---
+import H3 from "../../components/common/atom/H3.astro"
+import Paragraph from "../../components/common/atom/Paragraph.astro"
+const { title1, title2, text1, text2, image} = Astro.props
+---
+
+<div class="container mx-auto max-w-6xl my-24">
+    <div class="flex flex-col gap-6">
+        <H3
+            text={ title1 }
+        />
+        {
+
+            text1?.map( (text) => {
+
+                return (
+                    <Paragraph>{ text }</Paragraph>
+                )
+
+            })
+
+        }
+    </div>
+	<div class="grid grid-cols-2 gap-10 py-28">
+		<div class="bg-gray-100 h-80"></div>
+		<div class="bg-gray-100 h-80"></div>
+	</div>
+    <div class="flex flex-col gap-6">
+        <H3
+            text={ title2 }
+        />
+        {
+
+            text2?.map( (text) => {
+
+                return (
+                    <Paragraph>{ text }</Paragraph>
+                )
+
+            })
+
+        }
+    </div>
+</div>

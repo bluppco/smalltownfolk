@@ -1,18 +1,27 @@
 ---
-import Header from "../components/common/Header.astro"
+import { getCollection } from 'astro:content'
+let team = await getCollection('team')
+team = team.sort((a, b) => a.data.order - b.data.order)
+team = team.filter( ( item ) => item.data.live )
+import Header from "../components/common/Header.jsx"
 import Head from "../components/common/Head.astro"
 import Footer from "../components/common/Footer.astro"
 import H1 from "../components/common/atom/H1.astro"
 import H4 from "../components/common/atom/H4.astro"
+import H6 from "../components/common/atom/H6.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
-import { TEAM } from "../constants"
+import Values from "../components/about/Values.astro"
+import OurProcess from "../components/about/OurProcess.astro"
 ---
 
 <html lang="en">
 	<Head />
 	<body>
-		<Header />
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
+		<Header
+			pathname= { Astro.url.pathname }
+			client:load
+		/>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 !py-20 mt-36">
 			<div class="grid gap-4">
 				<H1
 					text="About us"
@@ -25,27 +34,13 @@ import { TEAM } from "../constants"
 				/>
 			</div>
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
-			<div class="grid gap-4">
-				<H1
-					text="Our values"
-				/>
-				<Paragraph
-					text="Everyday, we strive to create the perfect environment to bring out the best in all of us. So we thought it would be a good idea to jot down what we believe in - our values. Needless to say, these are constantly evolving and growing just like we are! "
-				/>
-			</div>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:!py-20">
+			<Values />
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
-			<div class="grid gap-4">
-				<H1
-					text="Our process"
-				/>
-				<Paragraph
-					text="At Small Town Folk, the client, the consumer and us are playing a continuous symphony using the below steps. We deeply believe that none of the following steps have to be followed in a linear fashion. We are continuously discovering, exploring, critiquing and sharing ideas with the 3 part triangle - the client, the consumer and us. "
-				/>
-			</div>
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:!py-20">
+			<OurProcess />
 		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 py-20">
+		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 !py-20">
 			<div class="grid gap-4">
 				<H1
 					text="Meet our team"
@@ -54,28 +49,26 @@ import { TEAM } from "../constants"
 					text="Everyone at Small Town Folk comes from different backgrounds and is equipped with more than one skill set. We don't pretend to have all the answers but we can promise that we'll leave no stone unturned in our quest to find that great idea. "
 				/>
 			</div>
-			<div class="grid grid-cols-3 gap-10 py-20">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-10 py-20">
 			{
 
-				TEAM.map( ( team ) => {
+				team.map( ( team ) => {
 
 					return (
-						<div class="">
+						<div class="flex flex-col gap-4">
 							<div class="w-full aspect-square bg-zinc-200">
 								<img
-									src={ team.image }
+									src={ team.data.image }
 									class="object fit w-full h-full"
-									alt={ team.name + "'s picture"}
+									alt={ team.data.name + "'s picture"}
 								/>
 							</div>
-							<div class="mt-4">
-								<H4
-									text={ team.name }
-								/>
-								<Paragraph
-									text={ team.description }
-								/>
-							</div>
+							<H4
+								text={ team.data.name }
+							/>
+							<Paragraph
+								text={ team.data.description }
+							/>
 						</div>
 					)
 
