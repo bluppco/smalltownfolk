@@ -1,0 +1,12 @@
+---
+const {
+
+    external,
+    link,
+    text,
+
+} = Astro.props
+---
+<a href={ link } target={ external ? "_blank" : "" }>
+    <button class="bg-primary font-karla px-6 py-3 uppercase">{ text }</button>
+</a>

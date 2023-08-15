@@ -8,7 +8,14 @@ module.exports = {
 			  'clarendon': ["clarendon-text-pro", "serif"],
 			  'system': ["ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
 			},
-		},
+			colors: {
+				"primary": "#F0E15C",
+				"footer": "#EBEBEB"
+			},
+			transitionProperty: {
+                'width': 'width'
+            },
+		}
 	},
 	plugins: [],
 }
