@@ -1,0 +1,23 @@
+---
+import H4 from "../common/atom/H4.astro"
+import Paragraph from "../common/atom/Paragraph.astro"
+const {
+
+    description,
+    heading,
+    image,
+
+} = Astro.props
+---
+<div class="flex flex-col gap-4">
+    <img
+        src={ image }
+        class="object-fit w-full"
+    />
+    <H4
+        text={ heading }
+    />
+    <Paragraph
+        text={ description }
+    />
+</div>

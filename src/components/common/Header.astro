@@ -1,46 +1,55 @@
 ---
 import NavigationItem from "./navigation/NavigationItem.astro"
+const { pathname } = Astro.url
 ---
-<header class="bg-white fixed top-0 w-full bg-white z-50 !h-36">
+<header class="bg-white fixed top-0 w-full z-50 !h-36">
     <section class="bg-black py-4 text-center">
         <p class="text-white text-sm !font-system">
             <span>This is a demo website by</span>
-            <a href="https://blupp.co" target="_blank" rel="nofollow noindex">
-                <span class="underline text-sm !font-system no_style">Blupp Co</span>.
+            <a href="https://blupp.co" target="_blank" rel="nofollow noindex" class="no_style">
+                <span class="no_style !text-sm underline">Blupp Co</span>.
             </a>
             <span>You can check the codebase on</span>
-            <a href="https://github.com/bluppco/smalltownfolk" target="_blank" rel="nofollow noindex">
-                <span class="underline text-sm !font-system no_style">Github</span>.
+            <a href="https://github.com/bluppco/smalltownfolk" target="_blank" rel="nofollow noindex" class="no_style">
+                <span class="no_style !text-sm underline">Github</span>.
             </a>
         </p>
     </section>
-    <section class="py-8">
-        <div class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex justify-between items-center">
-            <a href="/" class="w-36">
+    <section class="py-4 md:py-8">
+        <div class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex justify-between items-center px-4 md:px-0">
+            <a href="/" class="w-28 md:w-36">
                 <img
                     src="https://blupp.b-cdn.net/smalltownfolk/STF-02.png?width=300"
                     class="object-fit w-full h-full"
                     alt="Small Talk Folk's logo"
                 />
             </a>
-            <nav class="flex gap-12 items-center">
+            <nav class="gap-12 items-center hidden md:flex">
                 <NavigationItem
                     text="Work"
                     link="/work"
+                    highlight={ pathname === "/work" ? true : false }
                 />
                 <NavigationItem
                     text="About"
                     link="/about"
+                    highlight={ pathname === "/about" ? true : false }
                 />
                 <NavigationItem
                     text="Careers"
                     link="/careers"
+                    highlight={ pathname === "/careers" ? true : false }
                 />
                 <NavigationItem
                     text="Contact"
                     link="/contact"
+                    highlight={ pathname === "/contact" ? true : false }
                 />
             </nav>
+            <div class="flex flex-col gap-2">
+                <div class="w-6 h-px bg-black"></div>
+                <div class="w-6 h-px bg-black"></div>
+            </div>
         </div>
     </section>
 </header>
