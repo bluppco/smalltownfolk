@@ -4,14 +4,14 @@ const Introduction = () => {
     return (
         <div className="grid grid-cols gap-4 p-4 md:p-0">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8 py-4 md:py-20">
-                <div >
+                <div className="w-[70%]">
                     <img
                         src="https://blupp.b-cdn.net/smalltownfolk/small-town-folk-logo-circle@3x.png?quality=80"
                         className="object-fit w-full h-full"
                     />
                 </div>
             </div>
-            <div className="grid grid-cols py-4 md:py-20">
+            <div className="grid grid-cols py-4 md:py-10">
                 <TypeAnimation
                     sequence={[
                         'We are a multidisciplinary creative studio.',
