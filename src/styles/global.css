@@ -1,6 +1,6 @@
 p {
 
-	@apply text-lg md:text-xl font-['Karla','sans-serif'] text-black;
+	@apply text-lg md:text-xl font-['Karla','sans-serif'] text-black !h-full;
 
 }
 p a {
@@ -29,9 +29,9 @@ h5 {
 	@apply !text-xl text-zinc-900 font-clarendon;
 
 }
-p img {
+div p img {
 
-	@apply !object-cover w-full;
+	@apply !object-cover w-full h-full;
 
 }
 
