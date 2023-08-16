@@ -20,7 +20,7 @@ const Introduction = () => {
                         2000,
                         "Constantly learning and unlearning.",
                         2000,
-                        'Creating people let brands.',
+                        'Creating people-led brands.',
                         2000,
                     ]}
                     wrapper="span"
