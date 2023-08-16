@@ -4,6 +4,7 @@ const posts = await getCollection('work');
 const posts_sorted = posts.sort((a, b) => a.data.order - b.data.order)
 import Header from "../../components/common/Header.jsx"
 import Footer from "../../components/common/Footer.astro"
+import H1 from "../../components/common/atom/H1.astro"
 import H2 from "../../components/common/atom/H2.astro"
 import H4 from "../../components/common/atom/H4.astro"
 import Head from "../../components/common/Head.astro"
@@ -18,6 +19,11 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 			client:load
 		/>
 		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex py-20 mt-36">
+			<H1
+				text="About us"
+			/>
+		</section>
+		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex pt-0 pb-20">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full p-4 md:p-0">
 			{
 				posts_sorted.map( ( work ) => {
