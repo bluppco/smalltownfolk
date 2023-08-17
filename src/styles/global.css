@@ -69,5 +69,7 @@ li {
 }
 
 div.image_container p{
+
 	@apply h-full overflow-hidden;
+
 }
