@@ -1,11 +1,11 @@
 p {
 
-	@apply text-lg md:text-xl font-['Karla','sans-serif'] text-black !h-full;
+	@apply text-lg md:text-xl font-karla text-black !h-full;
 
 }
 p a {
 
-	@apply underline text-xl font-['Karla','sans-serif'] font-semibold;
+	@apply underline text-xl font-karla font-semibold;
 
 }
 h1 {
@@ -27,6 +27,11 @@ h3 {
 h5 {
 
 	@apply !text-xl text-zinc-900 font-clarendon;
+
+}
+h6 {
+
+	@apply !text-lg text-zinc-900 font-karla !font-bold tracking-wide;
 
 }
 div p img {
