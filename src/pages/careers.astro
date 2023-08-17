@@ -8,6 +8,7 @@ import Paragraph from "../components/common/atom/Paragraph.astro"
 import Head from "../components/common/Head.astro"
 import "../styles/global.css"
 import { getCollection } from 'astro:content';
+import H6 from "../components/common/atom/H6.astro"
 const openings = await getCollection('openings');
 const openings_sorted = openings.sort((a, b) => a.data.order - b.data.order)
 ---
@@ -29,7 +30,7 @@ const openings_sorted = openings.sort((a, b) => a.data.order - b.data.order)
 					<H1
 						text="Grow with us"
 					/>
-					<p class="leading-8 font-karla text-black">We're always looking for driven and curious folk to be a part of our team. If you're interested in any of the roles listed below, please submit your portfolio and CV to <b class="!font-bold">careers@smalltownfolk.com</b> using the job title as a reference in your subject line. We will write back if we see you as a fit. Since we're a small team, we hope you understand that we may not always be able to write back in case otherwise. </p>
+					<p class="leading-8 font-karla text-black">We're always looking for driven and curious folk to be a part of our team. If you're interested in any of the roles listed below, please submit your portfolio and CV to <a class="!font-bold" href="mailto:careers@smalltownfolk.com">careers@smalltownfolk.com</a> using the job title as a reference in your subject line. We will write back if we see you as a fit. Since we're a small team, we hope you understand that we may not always be able to write back in case otherwise. </p>
 					<p class="leading-8 font-karla text-black">We usually do a preliminary shortlist, after which we reach out to you for a quick chat over the phone. If this goes well for both of us, we invite you to meet with us either physically or virtually to present one of your projects to our team, followed by an interview with the team-lead to get to know you better. </p>
 				</div>
 			</div>
@@ -63,7 +64,7 @@ const openings_sorted = openings.sort((a, b) => a.data.order - b.data.order)
 			</div>
 			<div class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:grid-cols-2 md:py-20">
 				<div class="grid gap-4">
-					<H2
+					<H6
 						text="Don't see a match?"
 					/>
 					<Paragraph
