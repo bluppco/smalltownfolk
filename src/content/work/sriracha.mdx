@@ -1,4 +1,5 @@
 ---
+seo_description: We were tasked with creating a retail-uplift campaign that would do justice to this menu and clientele. We created something valuable together.
 title: Composing the Correct Communication for Sriracha | Small Town Folk — Small Town Folk
 description: Welcome to the Orient 
 image: https://blupp.b-cdn.net/smalltownfolk/tasveerien-sriracha-cover-desktop-02.jpg?quality=80
@@ -19,11 +20,12 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
         ## Sriracha
-        ##### Core Brand Assets
+        ###### CORE BRAND ASSETS
 
         Brand communication
     </Column>
@@ -36,16 +38,31 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column2>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sriracha/tasveerien-sriracha-chop.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "sriracha/tasveerien-sriracha-chop.jpg?quality=" + IMAGE_QUALITY }
+            alt="sriracha chop"
+            class="w-full h-full"
+        />
+    
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sriracha/tasveerien-sriracha-colour.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "sriracha/tasveerien-sriracha-colour.jpg?quality=" + IMAGE_QUALITY }
+            alt="sriracha colour"
+            class="w-full h-full"
+        />
+    
     </Column>
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/tasveerien-sriracha-express-lunch-desktop-04?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "tasveerien-sriracha-express-lunch-desktop-04.jpg?quality=" + IMAGE_QUALITY }
+        alt="sriracha express lunch"
+        class="w-full h-full"
+    />
+    
 </Column>
 
 <Column>
@@ -57,32 +74,67 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column3>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sriracha/tasveerien-sriracha-element-06.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "sriracha/tasveerien-sriracha-element-06.png?quality=" + IMAGE_QUALITY }
+            alt="sriracha food illustration"
+            class="w-full h-full"
+        />
+    
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sriracha/tasveerien-sriracha-element-05.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "sriracha/tasveerien-sriracha-element-05.png?quality=" + IMAGE_QUALITY }
+            alt="sriracha express lunch"
+            class="w-full h-full"
+        />
+    
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sriracha/tasveerien-sriracha-element-04.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "sriracha/tasveerien-sriracha-element-04.png?quality=" + IMAGE_QUALITY }
+            alt="sriracha food"
+            class="w-full h-full"
+        />
+    
     </Column>
 </Column3>
 
 <Column3>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sriracha/tasveerien-sriracha-element-03.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "sriracha/tasveerien-sriracha-element-03.png?quality=" + IMAGE_QUALITY }
+            alt="sriracha food element"
+            class="w-full h-full"
+        />
+    
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sriracha/tasveerien-sriracha-element-02.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "sriracha/tasveerien-sriracha-element-02.png?quality=" + IMAGE_QUALITY }
+            alt="sriracha foods "
+            class="w-full h-full"
+        />
+    
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sriracha/tasveerien-sriracha-element-01.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "sriracha/tasveerien-sriracha-element-01.png?quality=" + IMAGE_QUALITY }
+            alt="sriracha food illustrations smalltownfolk"
+            class="w-full h-full"
+        />
+    
     </Column>
 </Column3>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sriracha/tasveerien-sriracha-express-lunch-desktop-04.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "sriracha/tasveerien-sriracha-express-lunch-desktop-04.jpg?quality=" + IMAGE_QUALITY }
+        alt="sriracha express lunch"
+        class="w-full h-full"
+    />
+    
 </Column>

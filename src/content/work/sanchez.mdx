@@ -1,4 +1,5 @@
 ---
+seo_description: Sanchez reached out to us for the promotion of their recently launched Burrito Bowl Power Lunch.  An outdoor hoarding seemed like the perfect fit with maximum traction and footfall.
 title: Breaking the Brand Rules for Sanchez | Small Town Folk — Small Town Folk
 description: Lets taco 'bout it 
 image: https://blupp.b-cdn.net/smalltownfolk/sanchez/tasveerien-sanchez-cover-desktop-03.jpg?quality=80
@@ -19,11 +20,12 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
         ## Sanchez
-        ##### Core Brand Assets
+        ###### CORE BRAND ASSETS
 
         Brand Communication
     </Column>
@@ -36,11 +38,21 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sanchez/tasveerien-sanchez-bowl-desktop-03.jpg?quality=80?quality=80&width=800 "a title") 
+    <img
+        src={ CDN_LINK + "sanchez/tasveerien-sanchez-bowl-desktop-03.jpg?quality=" + IMAGE_QUALITY }
+        alt="sanchez bowl"
+        class="w-full h-full"
+    />
+    
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sanchez/tasveerien-sanchez-elements.jpg?quality=80?quality=80&width=800 "a title") 
+    <img
+        src={ CDN_LINK + "sanchez/tasveerien-sanchez-elements.jpg?quality=" + IMAGE_QUALITY }
+        alt="sanchez elements"
+        class="w-full h-full"
+    />
+     
 </Column>
 
 <Column>
@@ -51,18 +63,38 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column3>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sanchez/Asset+9.png?quality=80?quality=80&width=800 "a title") 
+        <img
+        src={ CDN_LINK + "sanchez/Asset+9.png?quality=" + IMAGE_QUALITY }
+        alt="sanchez food illustrations"
+        class="w-full h-full"
+    />
+     
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sanchez/tasveerien-sanchez-panel-02.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+        src={ CDN_LINK + "sanchez/tasveerien-sanchez-panel-02.jpg?quality=" + IMAGE_QUALITY }
+        alt="sanchez Burrito bowl"
+        class="w-full h-full"
+    />
+    
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sanchez/Asset+7.png?quality=80?quality=80&width=800 "a title")
+        <img
+        src={ CDN_LINK + "sanchez/Asset+7.png?quality=" + IMAGE_QUALITY }
+        alt="sanchez food"
+        class="w-full h-full"
+    />
+    
     </Column>
 </Column3>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/sanchez/tasveerien-sanchez-full-desktop-2.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "sanchez/tasveerien-sanchez-full-desktop-2.jpg?quality=" + IMAGE_QUALITY }
+        alt="sanchez full"
+        class="w-full h-full"
+    />
+    
 </Column>

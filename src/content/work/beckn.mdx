@@ -1,4 +1,5 @@
 ---
+seo_description: The initial simplicity of the internet and the email got lost to a world of closed ecosystems. Beckn believed a simple solution to this complex problem was to get these silos connected to each other.
 title: Beckn's Positioning and Brand Identity | Small Town Folk — Small Town Folk
 url: https://smalltownfolk.blupp.co/work/beckn
 order: 1
@@ -16,11 +17,12 @@ import Column from "../../components/work/Column.astro";
 import Column2 from "../../components/work/Column2.astro";
 import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
         ## beckn
-        ##### Core Brand Assets
+        ###### CORE BRAND ASSETS
 
         Brand Strategy\
         Brand Guidelines\
@@ -38,10 +40,20 @@ import Column4 from "../../components/work/Column4.astro";
 
 <Column2>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-ideation-01.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+        src={ CDN_LINK + "beckn/small-town-folk-beckn-ideation-01.jpg?quality=" + IMAGE_QUALITY }
+        alt="beckn ideation"
+        class="w-full h-full"
+        />
+        
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-ideation-02.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+        src={ CDN_LINK + "beckn/small-town-folk-beckn-ideation-02.jpg?quality=" + IMAGE_QUALITY }
+        alt="beckn ideation smalltownfolk"
+        class="w-full h-full"
+        />
+        
     </Column>
 </Column2>
 
@@ -53,25 +65,45 @@ import Column4 from "../../components/work/Column4.astro";
 
 <Column3>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-consumers-02.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-consumers-02.png?quality=" + IMAGE_QUALITY }
+            alt="beckn consumers"
+            class="w-full h-full"
+        />
+        
         ##### Consumers
         beckn eases the consumer’s life by making all forms of resources accessible and providing them with the freedom to choose.
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/small-town-folk-beckn-market-players.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+        src={ CDN_LINK + "small-town-folk-beckn-market-players.jpg?quality=" + IMAGE_QUALITY }
+        alt="beckn market players"
+        class="w-full h-full"
+        />
+        
         ##### Market Players
         beckn eases the lives of businesses by increasing their reach to new markets and customers
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/small-town-folk-beckn-governments.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+        src={ CDN_LINK + "small-town-folk-beckn-governments.jpg?quality=" + IMAGE_QUALITY }
+        alt="beckn governments"
+        class="w-full h-full"
+        />
+        
         ##### Governments
         beckn eases the government's journey by improving the lives of citizens through integrated infrastructure.
     </Column>
 </Column3>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-marker-construction.jpg?quality=80?quality=80&width=800 "a title")
-</Column>    
+    <img
+        src={ CDN_LINK + "beckn/small-town-folk-beckn-marker-construction.jpg?quality=" + IMAGE_QUALITY }
+        alt="beckn marker construction"
+        class="w-full h-full"
+    />
+    
+</Column>
 
 <Column>
     ## Hailing a brand identity
@@ -81,13 +113,18 @@ import Column4 from "../../components/work/Column4.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/stf-beckn-brand-guide-06.png?quality=80?quality=80&width=800 "a title")
-</Column> 
+    <img
+        src={ CDN_LINK + "beckn/stf-beckn-brand-guide-06.png?quality=" + IMAGE_QUALITY }
+        alt="beckn brand guide"
+        class="w-full h-full"
+    />
+    
+</Column>
 
 <Column>
     ## Building a visual system
 
-    The colour system was created to reflect the idea of a core infrastructure. RGB forms the base of the entire colour system. Using these three colours, one can beckn any colour. In other words, they are the digital infrastructure for beckn’s colour system. 
+    The colour system was created to reflect the idea of a core infrastructure. RGB forms the base of the entire colour system. Using these three colours, one can beckn any colour. In other words, they are the digital infrastructure for beckn’s colour system.
 
     Arial is a realist sans-serif typeface. It is one of the most basic fonts used across technology ecosystems. Using Arial lends our communication pieces an air of inclusiveness and universality, keeping in line with the core values of beckn.
 
@@ -96,20 +133,40 @@ import Column4 from "../../components/work/Column4.astro";
 
 <Column2>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-colour.jpg?quality=80?quality=80&width=800 "a title")
-    </Column> 
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-colour.jpg?quality=" + IMAGE_QUALITY }
+            alt="beckn colour"
+            class="w-full h-full"
+        />
+        
+    </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-typography.jpg?quality=80?quality=80&width=800 "a title")
-    </Column> 
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-typography.jpg?quality=" + IMAGE_QUALITY }
+            alt="beckn typography"
+            class="w-full h-full"
+        />
+        
+    </Column>
 </Column2>
 
 <Column2>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-iconography.jpg?quality=80?quality=80&width=800 "a title")
-    </Column> 
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-iconography.jpg?quality=" + IMAGE_QUALITY }
+            alt="beckn iconography"
+            class="w-full h-full"
+        />
+        
+    </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-illustration.jpg?quality=80?quality=80&width=800 "a title")
-    </Column> 
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-illustration.jpg?quality=" + IMAGE_QUALITY }
+            alt="beckn illustration"
+            class="w-full h-full"
+        />
+        
+    </Column>
 </Column2>
 
 <Column>
@@ -118,43 +175,87 @@ import Column4 from "../../components/work/Column4.astro";
 
 <Column4>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-grid.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-grid.png?quality=" + IMAGE_QUALITY }
+            alt="beckn grid"
+            class="w-full h-full"
+        />
+        
         ##### Grid
         The underlying grid represents digital infrastructure and the connection between individuals, businesses & governments.
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-gradation.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-gradation.png?quality=" + IMAGE_QUALITY }
+            alt="beckn gradation"
+            class="w-full h-full"
+        />
+        
         ##### Gradation
         The core value of minimal footprint is conveyed through the use of gradation in our visual language & logo.
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-lowercase.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-lowercase.png?quality=" + IMAGE_QUALITY }
+            alt="beckn lowercase"
+            class="w-full h-full"
+        />
+        
         ##### Lowercase
         Our brand stays passively visible and leaves a minimal footprint. This is reflected in the usage of lowercase text in our brand name and the gradation in our logo.
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-verbification.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "/beckn/small-town-folk-beckn-verbification.png?quality=" + IMAGE_QUALITY }
+            alt="beckn verbification"
+            class="w-full h-full"
+        />
+
         ##### Verbification
         Since beckn represents action and activity the word 'beckn' is used as a verb.
     </Column>
 </Column4>
 
 <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/stf-beckn-posters.jpg?quality=80?quality=80&width=800 "a title")
-</Column> 
+    <img
+        src={ CDN_LINK + "beckn/stf-beckn-posters.jpg?quality=" + IMAGE_QUALITY }
+        alt="beckn posters"
+        class="w-full h-full"
+    />
+     
+</Column>
 
 <Column3>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/Hanging-ID-Card-Mockup.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "beckn/Hanging-ID-Card-Mockup.jpg?quality=" + IMAGE_QUALITY }
+            alt="beckn Hanging ID Card Mockup"
+            class="w-full h-full"
+        />
+        
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-notebook.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-notebook.jpg?quality=" + IMAGE_QUALITY }
+            alt="beckn notebook"
+            class="w-full h-full"
+        />
+        
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-tote.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "beckn/small-town-folk-beckn-tote.jpg?quality=" + IMAGE_QUALITY }
+            alt="beckn tote"
+            class="w-full h-full"
+        />
+        
     </Column>
 </Column3>
 
 <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/beckn/small-town-folk-beckn-outdoor.jpg?quality=80?quality=80&width=800 "a title")
-</Column> 
+    <img
+        src={ CDN_LINK + "beckn/small-town-folk-beckn-outdoor.jpg?quality=" + IMAGE_QUALITY }
+        alt="beckn outdoor"
+        class="w-full h-full"
+    />       
+</Column>

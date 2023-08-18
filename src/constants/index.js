@@ -20,3 +20,6 @@ export const SERVICES = [
     ]
 
 ]
+export const CDN_LINK = "https://blupp.b-cdn.net/smalltownfolk/"
+export const IMAGE_QUALITY = 80
+export const IMAGE_WIDTH = 600

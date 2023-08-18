@@ -1,4 +1,5 @@
 ---
+seo_description: Branding for Nature & Thought — Small Town Folk
 title: Branding for Nature & Thought — Small Town Folk
 description: Ushering in thought to the supplement industry 
 image: https://blupp.b-cdn.net/smalltownfolk/stf-nat-cover-desktop.jpg?quality=80
@@ -19,11 +20,12 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
         ## Nature & Thought
-        ##### Core Brand Assets
+        ###### CORE BRAND ASSETS
 
         Brand Identity\
         Brand Strategy\
@@ -45,7 +47,11 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/nature-and-thought/n%26t-icons.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "nature-and-thought/n%26t-icons.jpg?quality=" + IMAGE_QUALITY }
+        alt="nature and thought usp"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
@@ -56,24 +62,36 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column2>
     <Column>
-    #### N&T Values
+        **N&T Values**
 
-    Safe natural ingredients\
-    Elevated through science\
-    Following sustainable practices
+        Safe natural ingredients\
+        Elevated through science\
+        Following sustainable practices
     </Column>
     <Column>
-        #### Brand messaging
+        **Brand messaging**
 
         Fuelled by science, backed by nature 
     </Column>
 </Column2>
 
  <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/nature-and-thought/tasveerien-amintiri-tiramisu-desktop.png?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "nature-and-thought/tasveerien-amintiri-tiramisu-desktop.png?quality=" + IMAGE_QUALITY }
+        alt="nature and thought golden hug"
+        class="w-full h-full"
+    />
 </Column>
 
-2 Video
+<Column2>
+    <Column>
+    <div class="bg-zinc-200 h-96 flex justify-center items-center">_VimeoVideo_</div>
+    </Column>
+
+    <Column>
+    <div class="bg-zinc-200 h-96 flex justify-center items-center">_VimeoVideo_</div>
+    </Column>
+</Column2>
 
 <Column>
         ## A natural design system
@@ -83,16 +101,28 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column2>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/nature-and-thought/n%26t-colour.png?quality=80?quality=80&width=800 "a title")
+        <img
+        src={ CDN_LINK + "nature-and-thought/n%26t-colour.png?quality=" + IMAGE_QUALITY }
+        alt="nature-and-thought colours"
+        class="w-full h-full"
+    />
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/nature-and-thought/n%26t-type-03.png?quality=80?quality=80&width=800 "a title")
+        <img
+        src={ CDN_LINK + "nature-and-thought/n%26t-type-03.png?quality=" + IMAGE_QUALITY }
+        alt="nature and thought mission"
+        class="w-full h-full"
+    />
     </Column>
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/nature-and-thought/tasveerien-amintiri-catalog-desktop.png?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "nature-and-thought/tasveerien-amintiri-catalog-desktop.png?quality=" + IMAGE_QUALITY }
+        alt="nature and thought mobile website"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
@@ -102,7 +132,11 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/nature-and-thought/social_1.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "nature-and-thought/social_1.jpg?quality=" + IMAGE_QUALITY }
+        alt="nature and thought social media"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
@@ -112,7 +146,11 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/nature-and-thought/n&t-packaging.gif?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "nature-and-thought/n&t-packaging.gif?quality=" + IMAGE_QUALITY }
+        alt="nature and thought packaging"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
@@ -122,5 +160,9 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/nature-and-thought/n&t-influencer-kit.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "nature-and-thought/n&t-influencer-kit.jpg?quality=" + IMAGE_QUALITY }
+        alt="nature and thought influencer kit"
+        class="w-full h-full"
+    />
 </Column>
