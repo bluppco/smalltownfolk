@@ -1,81 +1,84 @@
 ---
 import H4 from "./atom/H4.astro"
+import Container from "../../layouts/Container.astro"
 ---
 <footer class="bg-footer py-10 md:py-40 font-karla">
-    <div class="container max-w-7xl mx-auto grid gap-10">
-        <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 md:gap-0">
-            <div class="text-center md:text-left">
-                <H4
-                    text={ "Let's create something"}
-                />
-                <H4
-                    text={ "valuable together."}
-                />
-            </div>
-            <div class="flex gap-2">
-                <a href="mailto:avinash@smalltownfolk.com" rel="noindex nofollow" target="_blank">
-                    <div>
-                        <img
-                            src="/email.svg"
-                            class="w-6 h-6"
-                        />
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/thesmalltownfolk/" rel="noindex nofollow" target="_blank">
-                    <div>
-                        <img
-                            src="/instagram.svg"
-                            class="w-6 h-6"
-                        />
-                    </div>
-                </a>
-                <a href="https://vimeo.com/tasveerien" rel="noindex nofollow"  target="_blank">
-                    <div>
-                        <img
-                            src="/vimeo.svg"
-                            class="w-6 h-6"
-                        />
-                    </div>
-                </a>
-                <a href="https://www.behance.net/smalltownfolk" rel="noindex nofollow"  target="_blank">
-                    <div>
-                        <img
-                            src="/behance.svg"
-                            class="w-6 h-6"
-                        />
-                    </div>
-                </a>
-                <a href="https://medium.com/@smalltownfolk" rel="noindex nofollow"  target="_blank">
-                    <div>
-                        <img
-                            src="/medium.svg"
-                            class="w-6 h-6"
-                        />
-                    </div>
-                </a>
-            </div>
+    <Container>
+        <div class="grid gap-10">
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 md:gap-0">
+                <div class="text-center md:text-left">
+                    <H4
+                        text={ "Let's create something"}
+                    />
+                    <H4
+                        text={ "valuable together."}
+                    />
+                </div>
+                <div class="flex gap-2">
+                    <a href="mailto:avinash@smalltownfolk.com" rel="noindex nofollow" target="_blank">
+                        <div>
+                            <img
+                                src="/email.svg"
+                                class="w-6 h-6"
+                            />
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/thesmalltownfolk/" rel="noindex nofollow" target="_blank">
+                        <div>
+                            <img
+                                src="/instagram.svg"
+                                class="w-6 h-6"
+                            />
+                        </div>
+                    </a>
+                    <a href="https://vimeo.com/tasveerien" rel="noindex nofollow"  target="_blank">
+                        <div>
+                            <img
+                                src="/vimeo.svg"
+                                class="w-6 h-6"
+                            />
+                        </div>
+                    </a>
+                    <a href="https://www.behance.net/smalltownfolk" rel="noindex nofollow"  target="_blank">
+                        <div>
+                            <img
+                                src="/behance.svg"
+                                class="w-6 h-6"
+                            />
+                        </div>
+                    </a>
+                    <a href="https://medium.com/@smalltownfolk" rel="noindex nofollow"  target="_blank">
+                        <div>
+                            <img
+                                src="/medium.svg"
+                                class="w-6 h-6"
+                            />
+                        </div>
+                    </a>
+                </div>
 
-        </div>
-        <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 md:gap-0">
-            <div class="grid gap-2 text-center md:text-left">
-                <div>avinash@smalltownfolk.com</div>
-                <div>+91 95358 94897</div>
             </div>
-            <div class="text-center md:text-right grid gap-2">
-                <div>© 2023 Small Town Folk. All Rights Reserved.</div>
-                <a href="/privacy-policy">
-                    <div>Privacy Policy</div>
+            <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-4 md:gap-0">
+                <div class="grid gap-2 text-center md:text-left">
+                    <div>avinash@smalltownfolk.com</div>
+                    <div>+91 95358 94897</div>
+                </div>
+                <div class="text-center md:text-right grid gap-2">
+                    <div>© 2023 Small Town Folk. All Rights Reserved.</div>
+                    <a href="/privacy-policy">
+                        <div>Privacy Policy</div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex gap-4 justify-center md:justify-start">
+                <a href="https://www.smalltownfolk.com/freesource-fridays" rel="noindex nofollow"  target="_blank">
+                    <div>Freesources</div>
+                </a>
+                <div>•</div>
+                <a href="https://medium.com/@smalltownfolk" rel="noindex nofollow"  target="_blank">
+                    <div>Blog</div>
                 </a>
             </div>
         </div>
-        <div class="flex gap-4 justify-center md:justify-start">
-            <a href="https://www.smalltownfolk.com/freesource-fridays" rel="noindex nofollow"  target="_blank">
-                <div>Freesources</div>
-            </a>
-            <div>•</div>
-            <a href="https://medium.com/@smalltownfolk" rel="noindex nofollow"  target="_blank">
-                <div>Blog</div>
-            </a>
-        </div>
-    </div>
+    </Container>
 </footer>

@@ -6,10 +6,11 @@ import Works from "../components/home/Works.astro"
 import Strategy from "../components/home/Strategy.astro"
 import BehindLens from "../components/home/BehindLens.astro"
 import Introduction from "../components/home/Introduction.jsx"
+import Container from "../layouts/Container.astro"
 ---
 
 <html lang="en">
-	<Head 
+	<Head
 		title="Small Town Folk | We Create Exceptional Brand Experiences  "
 		description="We help businesses create core brand assets and launch brands, products, bespoke brand experiences and with brand identity"
 		image="https://blupp.b-cdn.net/smalltownfolk/small-town-folk-logo-circle%403x.png?quality=80"
@@ -19,20 +20,22 @@ import Introduction from "../components/home/Introduction.jsx"
 			pathname= { Astro.url.pathname }
 			client:load
 		/>
-		<section class="mt-36 container xl:max-w-7xl lg:max-w-6xl mx-auto py-4 md:py-20">
-			<Introduction client:load/>
-		</section>
-		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto py-4 md:py-20">
-			<Works />
-		</section>
-		<section class="bg-zinc-800">
-			<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto">
-				<Strategy />
+		<Container>
+			<section class="mt-36">
+				<Introduction client:load/>
 			</section>
+			<section class="py-20">
+				<Works />
+			</section>
+		</Container>
+		<section class="bg-zinc-800">
+			<Container>
+				<Strategy/>
+			</Container>
 		</section>
-		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto">
+		<Container>
 			<BehindLens />
-		</section>
+		</Container>
 		<Footer />
 	</body>
 </html>
