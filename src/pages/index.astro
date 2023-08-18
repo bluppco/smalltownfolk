@@ -1,41 +1,38 @@
 ---
 import Header from "../components/common/Header.jsx"
 import Footer from "../components/common/Footer.astro"
-import Head from "../components/common/Head.astro"
 import Works from "../components/home/Works.astro"
 import Strategy from "../components/home/Strategy.astro"
 import BehindLens from "../components/home/BehindLens.astro"
 import Introduction from "../components/home/Introduction.jsx"
 import Container from "../layouts/Container.astro"
+import Layout from "../layouts/Layout.astro"
 ---
 
-<html lang="en">
-	<Head
-		title="Small Town Folk | We Create Exceptional Brand Experiences  "
-		description="We help businesses create core brand assets and launch brands, products, bespoke brand experiences and with brand identity"
-		image="https://blupp.b-cdn.net/smalltownfolk/small-town-folk-logo-circle%403x.png?quality=80"
+<Layout
+	title="Small Town Folk | We Create Exceptional Brand Experiences  "
+	description="We help businesses create core brand assets and launch brands, products, bespoke brand experiences and with brand identity"
+	image="https://blupp.b-cdn.net/smalltownfolk/small-town-folk-logo-circle%403x.png?quality=80"
+>
+	<Header
+		pathname= { Astro.url.pathname }
+		client:load
 	/>
-	<body>
-		<Header
-			pathname= { Astro.url.pathname }
-			client:load
-		/>
-		<Container>
-			<section class="mt-36">
-				<Introduction client:load/>
-			</section>
-			<section class="py-20">
-				<Works />
-			</section>
-		</Container>
-		<section class="bg-zinc-800">
-			<Container>
-				<Strategy/>
-			</Container>
-		</section>
-		<Container>
-			<BehindLens />
-		</Container>
-		<Footer />
-	</body>
-</html>
+	<Container>
+	<section class="mt-36">
+		<Introduction client:load/>
+	</section>
+	<section class="py-20">
+		<Works />
+	</section>
+	</Container>
+	<section class="bg-zinc-800">
+	<Container>
+		<Strategy/>
+	</Container>
+	</section>
+	<Container>
+		<BehindLens />
+	</Container>
+	<Footer />
+</Layout>
