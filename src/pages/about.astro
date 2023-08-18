@@ -4,11 +4,9 @@ let team = await getCollection('team')
 team = team.sort((a, b) => a.data.order - b.data.order)
 team = team.filter( ( item ) => item.data.live )
 import Header from "../components/common/Header.jsx"
-import Head from "../components/common/Head.astro"
 import Footer from "../components/common/Footer.astro"
 import H1 from "../components/common/atom/H1.astro"
 import H4 from "../components/common/atom/H4.astro"
-import H6 from "../components/common/atom/H6.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
 import Values from "../components/about/Values.astro"
 import OurProcess from "../components/about/OurProcess.astro"
