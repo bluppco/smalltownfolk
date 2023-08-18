@@ -12,75 +12,57 @@ import H6 from "../components/common/atom/H6.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
 import Values from "../components/about/Values.astro"
 import OurProcess from "../components/about/OurProcess.astro"
+import Layout from "../layouts/Layout.astro"
+import Container from "../layouts/Container.astro"
 ---
-
-<html lang="en">
-	<Head 
-		title="About — Small Town Folk"
-		description="We are a bunch of folks who believe in the idea of evocative story telling. Based in Bangalore, our team uses the visual medium to create lasting impressions. We weave stories to create an alluring experience using our individual and honest style."
-		image="https://blupp.b-cdn.net/smalltownfolk/smalltownfolk-say-hello.png?quality=80"
+<Layout
+	title="Work — Small Town Folk"
+	description="Work — Small Town Folk"
+	image="https://blupp.b-cdn.net/smalltownfolk/tasveerien-yogabar-cover.jpg?quality=80"
+>
+	<Header
+		pathname= { Astro.url.pathname }
+		client:load
 	/>
-	<body>
-		<Header
-			pathname= { Astro.url.pathname }
-			client:load
-		/>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 !py-20 mt-36">
-			<div class="grid gap-4">
-				<H1
-					text="About us"
-				/>
-				<Paragraph
-					text="We started this journey because we believe in honest storytelling. Just like individuals, brands are meant to be unique. We help them find their voice and work with them to express it through strategy and design. "
-				/>
-				<Paragraph
-					text="Because we are highly committed to our work, we focus on constantly honing our skills by learning & unlearning through our environments and the people we work with. We are proud of our varied backgrounds and use our multidisciplinary skillsets across brand strategy, design and creative content, to focus solely on creating exceptional brand experiences. "
-				/>
-			</div>
-		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:!py-20">
+	<Container>
+		<section class="flex flex-col gap-10">
+			<section class="mt-36">
+				<div class="grid gap-4">
+					<H1>About us</H1>
+					<Paragraph>We started this journey because we believe in honest storytelling. Just like individuals, brands are meant to be unique. We help them find their voice and work with them to express it through strategy and design.</Paragraph>
+					<Paragraph>Because we are highly committed to our work, we focus on constantly honing our skills by learning & unlearning through our environments and the people we work with. We are proud of our varied backgrounds and use our multidisciplinary skillsets across brand strategy, design and creative content, to focus solely on creating exceptional brand experiences.</Paragraph>
+				</div>
+			</section>
 			<Values />
-		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 md:!py-20">
 			<OurProcess />
-		</section>
-		<section class="container max-w-7xl mx-auto grid grid-cols-1 p-4 md:p-0 !py-20">
-			<div class="grid gap-4">
-				<H1
-					text="Meet our team"
-				/>
-				<Paragraph
-					text="Everyone at Small Town Folk comes from different backgrounds and is equipped with more than one skill set. We don't pretend to have all the answers but we can promise that we'll leave no stone unturned in our quest to find that great idea. "
-				/>
-			</div>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-10 py-20">
-			{
+			<section class="grid gap-4">
+				<H1>Meet our team</H1>
+				<Paragraph>Everyone at Small Town Folk comes from different backgrounds and is equipped with more than one skill set. We don't pretend to have all the answers but we can promise that we'll leave no stone unturned in our quest to find that great idea.</Paragraph>
+			</section>
+			<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-20">
+				{
 
-				team.map( ( team ) => {
+					team.map( ( team ) => {
 
-					return (
-						<div class="flex flex-col gap-4">
-							<div class="w-full aspect-square bg-zinc-200">
-								<img
-									src={ team.data.image }
-									class="object fit w-full h-full"
-									alt={ team.data.name + "'s picture"}
-								/>
+						return (
+							<div class="flex flex-col gap-4">
+								<div class="w-full aspect-square bg-zinc-200">
+									<img
+										src={ team.data.image }
+										class="object fit w-full h-full"
+										alt={ team.data.name + "'s picture"}
+									/>
+								</div>
+								<H4>{ team.data.name }</H4>
+								<Paragraph>{ team.data.description }</Paragraph>
 							</div>
-							<H4
-								text={ team.data.name }
-							/>
-							<Paragraph
-								text={ team.data.description }
-							/>
-						</div>
-					)
+						)
 
-				})
+					})
 
-			}
-			</div>
+				}
+			</section>
 		</section>
-		<Footer />
-	</body>
-</html>
+	</Container>
+	<Footer />
+</Layout>
