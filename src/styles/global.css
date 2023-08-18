@@ -8,6 +8,11 @@ p a {
 	@apply underline text-xl font-karla font-semibold;
 
 }
+p a.nostyle {
+
+	@apply underline text-lg font-karla font-semibold;
+
+}
 h1 {
 
 	@apply !text-3xl md:!text-5xl font-semibold text-black font-clarendon;
