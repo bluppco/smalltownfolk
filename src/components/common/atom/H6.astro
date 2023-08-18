@@ -1,4 +1,6 @@
 ---
-const { light, text } = Astro.props
+const { light } = Astro.props
 ---
-<h6 class={`${light?"text-white": "text-zinc-900"} text-lg font-semibold font-clarendon`}>{ text }</h6>
+<h6 class={`${light?"text-white": "text-zinc-900"} text-lg font-semibold font-clarendon`}>
+    <slot />
+</h6>
