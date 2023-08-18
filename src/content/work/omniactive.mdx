@@ -20,6 +20,7 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
@@ -42,7 +43,12 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/omniactive/tasveerien-omniactive-xtracs-desktop.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "omniactive/tasveerien-omniactive-xtracs-desktop.jpg?quality=" + IMAGE_QUALITY }
+        alt="omniactive xtracs"
+        class="w-full h-full"
+    />
+    
 </Column>
 
 <Column>
@@ -52,7 +58,12 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/omniactive/tasveerien-omniactive-olixr-desktop.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "omniactive/tasveerien-omniactive-olixr-desktop.jpg?quality=" + IMAGE_QUALITY }
+        alt="omniactive olixr"
+        class="w-full h-full"
+    />
+    
 </Column>
 
 <Column>
@@ -62,7 +73,12 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/omniactive/tasveerien-omniactive-ogments-desktop.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "omniactive/tasveerien-omniactive-ogments-desktop.jpg?quality=" + IMAGE_QUALITY }
+        alt="omniactive ogments"
+        class="w-full h-full"
+    />
+    
 </Column>
 
 <Column>
@@ -72,7 +88,12 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/omniactive/tasveerien-website-omniactive-icons.gif?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "omniactive/tasveerien-website-omniactive-icons.gif?quality=" + IMAGE_QUALITY }
+        alt="omniactive icons"
+        class="w-full h-full"
+    />
+    
 </Column>
 
 <Column>
@@ -83,14 +104,24 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column2>
     <Column>
-        <div class="bg-zinc-200 flex justify-center items-center">_VimeoVideo_</div>
+        <div class="bg-zinc-200 flex justify-center items-center h-full">_VimeoVideo_</div>
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/omniactive/small-town-folk-omniactive-colors.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "omniactive/small-town-folk-omniactive-colors.jpg?quality=" + IMAGE_QUALITY }
+            alt="omniactive colors"
+            class="w-full h-full"
+        />
+    
     </Column>
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/omniactive/tasveerien-website-omniactive-eye.gif?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "omniactive/tasveerien-website-omniactive-eye.gif?quality=" + IMAGE_QUALITY }
+        alt="omniactive eye"
+        class="w-full h-full"
+    />
+    
 </Column>

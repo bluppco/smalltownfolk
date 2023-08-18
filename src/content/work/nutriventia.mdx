@@ -20,6 +20,7 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
@@ -53,10 +54,18 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column2>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/Nutriventia/small-town-folk-nutriventia-u.gif?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "Nutriventia/small-town-folk-nutriventia-u.gif?quality=" + IMAGE_QUALITY }
+            alt="nutriventia u gif"
+            class="w-full h-full"
+        />
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/Nutriventia/small-town-folk-nutriventia-colours.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "Nutriventia/small-town-folk-nutriventia-colours.png?quality=" + IMAGE_QUALITY }
+            alt="nutriventia colours"
+            class="w-full h-full"
+        />
     </Column>
 </Column2>
 
@@ -70,24 +79,44 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/Nutriventia/small-town-folk-nutriventia-illustrations.png?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "Nutriventia/small-town-folk-nutriventia-illustrations.png?quality=" + IMAGE_QUALITY }
+        alt="nutriventia illustrations"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/Nutriventia/small-town-folk-nutriventia-typography.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "Nutriventia/small-town-folk-nutriventia-typography.jpg?quality=" + IMAGE_QUALITY }
+        alt="nutriventia typography"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column2>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/Nutriventia/small-town-folk-nutriventia-icons.gif?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "Nutriventia/small-town-folk-nutriventia-icons.gif?quality=" + IMAGE_QUALITY }
+            alt="nutriventia icons gif"
+            class="w-full h-full"
+        />
     </Column>
     <Column>
-        ![Alt text](https://blupp.b-cdn.net/smalltownfolk/Nutriventia/small-town-folk-nutriventia-icons.png?quality=80?quality=80&width=800 "a title")
+        <img
+            src={ CDN_LINK + "Nutriventia/small-town-folk-nutriventia-icons.png?quality=" + IMAGE_QUALITY }
+            alt="nutriventia icons"
+            class="w-full h-full"
+        />
     </Column>
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/Nutriventia/small-town-folk-nutriventia-brand-guide.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "Nutriventia/small-town-folk-nutriventia-brand-guide.jpg?quality=" + IMAGE_QUALITY }
+        alt="nutriventia icons brand guide"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>

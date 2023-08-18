@@ -20,6 +20,7 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
@@ -40,7 +41,12 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/yogabar/tasveerien-yogabar-website.gif?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "yogabar/tasveerien-yogabar-website.gif?quality=" + IMAGE_QUALITY }
+        alt="yogabar website"
+        class="w-full h-full"
+    />
+    
 </Column>
 
 <Column>
@@ -49,7 +55,12 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/yogabar/small-town-folk-yogabar-posters-desktop.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "yogabar/small-town-folk-yogabar-posters-desktop.jpg?quality=" + IMAGE_QUALITY }
+        alt="yogabar posters"
+        class="w-full h-full"
+    />
+    
 </Column>
 
 <Column>
@@ -58,5 +69,10 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/yogabar/small-town-folk-yogabar-pos-01.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "yogabar/small-town-folk-yogabar-pos-01.jpg?quality=" + IMAGE_QUALITY }
+        alt="yogabar hazelenut coffee"
+        class="w-full h-full"
+    />
+    
 </Column>

@@ -20,6 +20,7 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
@@ -42,13 +43,20 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-identity.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-identity.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri a bake down memory lane"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-tiramisu-desktop.jpg?quality=80?quality=80&width=800 "a title")
+<img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-tiramisu-desktop.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri tiramisu"
+        class="w-full h-full"
+    />
 </Column>
-
 <Column>
     ## Packaged happiness
     Employing the rich colours in our brand manual, we created packaging using a minimal design style with aureate accents. Our main goal was to find the ideal mix of form and function. This is usually the first time the customer physically interacts with the brand and we made sure that the packaging not only looked aesthetically pleasing but was also easy to handle and transport. 
@@ -56,11 +64,19 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column2>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-packaging.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-packaging.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri packaging"
+        class="w-full h-full"
+    />
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-paper-bag.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-paper-bag.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri paper bag"
+        class="w-full h-full"
+    />
 </Column>
 </Column2>
 
@@ -70,7 +86,11 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-catalog-desktop.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-catalog-desktop.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri catalog"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
@@ -79,11 +99,19 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-website.gif?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-website.gif?quality=" + IMAGE_QUALITY }
+        alt="amintiri website"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-brownie-desktop-02.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-brownie-desktop-02.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri brownie"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
@@ -92,23 +120,43 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-social-posts.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-social-posts.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri instagram posts"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column3>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-caramel-cheesecake-02.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-caramel-cheesecake-02.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri caramel cheesecake"
+        class="w-full h-full"
+    />
     </Column>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-almondloaf-02.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-almondloaf-02.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri almondloaf"
+        class="w-full h-full"
+    />
     </Column>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-blackberry-mascarpone.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-blackberry-mascarpone.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri blackberry mascarpone"
+        class="w-full h-full"
+    />
     </Column>
 </Column3>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-menu-desktop.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-menu-desktop.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri menu desktop"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
@@ -118,9 +166,17 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column2>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-catering-card.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-catering-card.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri catering card"
+        class="w-full h-full"
+    />
     </Column>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/amintiri/tasveerien-amintiri-choux.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "amintiri/tasveerien-amintiri-choux.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri choux"
+        class="w-full h-full"
+    />
     </Column>
 </Column2>

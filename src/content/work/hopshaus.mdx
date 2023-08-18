@@ -20,6 +20,7 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
@@ -48,64 +49,132 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 <Column2>
     <Column>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-olroasted-stout-bottle.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-olroasted-stout-bottle.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus olroasted stout bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
         <ColumnImageSmall>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-sassy-saison-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-sassy-saison-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus sassy saison label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
     </Column>
     <Column>
         <ColumnImageSmall>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-olroasted-stout-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-olroasted-stout-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus olroasted stout label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-sassy-saison-bottle.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-sassy-saison-bottle.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus sassy saison bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
     </Column>
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-coasters-desktop-02.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-coasters-desktop-02.jpg?quality=" + IMAGE_QUALITY }
+        alt="hopshaus coasters"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column2>
     <Column>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-witty-belgian-bottle-05.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-witty-belgian-bottle-05.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus witty belgian bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
         <ColumnImageSmall>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-honey-maiden-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-honey-maiden-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus honey maiden label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
     </Column>
     <Column>
         <ColumnImageSmall>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-witty-belgian-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-witty-belgian-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus witty belgian label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-honey-maiden-bottle-04.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-honey-maiden-bottle-04.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus honey maiden bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
     </Column>
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-bottles-desktop-03.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-bottles-desktop-03.jpg?quality=" + IMAGE_QUALITY }
+        alt="hopshaus bottles"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column2>
     <Column>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-hip-hopster-bottle.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-hip-hopster-bottle.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus hip hopster bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
         <ColumnImageSmall>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-basmati-bounty-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-basmati-bounty-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus basmati bounty label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
     </Column>
     <Column>
         <ColumnImageSmall>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-hip-hopster-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-hip-hopster-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus hip hopster label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-basmati-bounty-bottle.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-basmati-bounty-bottle.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus basmati bounty bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
     </Column>
 </Column2>
