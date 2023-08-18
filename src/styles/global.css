@@ -1,11 +1,16 @@
 p {
 
-	@apply text-lg md:text-xl font-['Karla','sans-serif'] text-black;
+	@apply text-lg md:text-xl font-karla text-black !h-full;
 
 }
 p a {
 
-	@apply underline text-xl font-['Karla','sans-serif'] font-semibold;
+	@apply underline text-xl font-karla font-semibold;
+
+}
+p a.nostyle {
+
+	@apply underline text-lg font-karla font-semibold;
 
 }
 h1 {
@@ -29,9 +34,14 @@ h5 {
 	@apply !text-xl text-zinc-900 font-clarendon;
 
 }
-p img {
+h6 {
 
-	@apply !object-cover w-full;
+	@apply !text-lg text-zinc-900 font-karla !font-bold tracking-wide;
+
+}
+div p img {
+
+	@apply !object-cover h-full bg-zinc-200 w-full;
 
 }
 
@@ -60,5 +70,11 @@ ol {
 li {
 
 	@apply text-base md:text-lg text-zinc-800;
+
+}
+
+div.image_container p{
+
+	@apply h-full overflow-hidden;
 
 }

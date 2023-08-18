@@ -4,41 +4,45 @@ const posts = await getCollection('work');
 const posts_sorted = posts.sort((a, b) => a.data.order - b.data.order)
 import Header from "../../components/common/Header.jsx"
 import Footer from "../../components/common/Footer.astro"
+import H1 from "../../components/common/atom/H1.astro"
 import H2 from "../../components/common/atom/H2.astro"
 import H4 from "../../components/common/atom/H4.astro"
-import Head from "../../components/common/Head.astro"
 import Paragraph from "../../components/common/atom/Paragraph.astro"
+import Layout from "../../layouts/Layout.astro"
+import Container from "../../layouts/Container.astro"
+import Link from "../../layouts/Link.astro"
+import Video from "../../layouts/Video.astro"
 ---
-
-<html lang="en">
-	<Head />
-	<body>
-		<Header
-			pathname= { Astro.url.pathname }
-			client:load
-		/>
-		<section class="container xl:max-w-7xl lg:max-w-6xl mx-auto flex py-20 mt-36">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full p-4 md:p-0">
+<Layout
+	title="Work — Small Town Folk"
+	description="Work — Small Town Folk"
+	image="https://blupp.b-cdn.net/smalltownfolk/tasveerien-yogabar-cover.jpg?quality=80"
+>
+	<Header
+		pathname= { Astro.url.pathname }
+		client:load
+	/>
+	<Container>
+		<section class="mt-36">
+			<H1>About us</H1>
+		</section>
+	</Container>
+	<Container>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full p-2 md:p-0">
 			{
 				posts_sorted.map( ( work ) => {
 
 					return (
 						<div class="">
-							<a href={ "/work/" + work.data.link }>
+							<Link link={ "/work/" + work.data.link }>
 								<div class="h-96 w-full bg-zinc-200 relative group">
 									{
 
 										work.data.video_flag &&
-										<video
-											loop={ true }
-											autoplay={ true }
-											muted={ true }
-											playsinline={ true }
-											preload="auto"
-											class="h-full w-full object-cover"
-										>
+										<Video>
 											<source src={ work.data.video } type="video/mp4"/>
-										</video>
+										</Video>
+
 									}
 									{
 
@@ -53,7 +57,7 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 									{
 
 										work.data.award &&
-										<div class="absolute bottom-2 left-2 w-1/2 z-30">
+										<div class="absolute bottom-2 left-2 w-3/4 md:1/2 z-30">
 											<img
 												src={ work.data.award_image }
 												alt="award image"
@@ -62,18 +66,13 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 									}
 									<div class="absolute z-20 top-0 left-0 bg-black/60 w-full h-full opacity-0 hover:opacity-100 flex items-center justify-center">
 										<div class="p-12">
-											<H4
-												text={ work.data.description }
-												light={ true }
-											/>
+											<H4 light={ true }>{ work.data.description }</H4>
 										</div>
 									</div>
 								</div>
-							</a>
+							</Link>
 							<div class="mt-4">
-								<H2
-									text={ work.data.brand }
-								/>
+								<H2>{ work.data.brand }</H2>
 							</div>
 							<div class="mt-2 md:mt-4 flex flex-col md:flex-row gap-1 md:gap-4 items-start md:items-center">
 								{
@@ -82,18 +81,16 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 
 										if( category_item +1 < work.data.category.length )
 											return (
-												<Paragraph
-													text={ category }
-													small={ true }
-												/>
+												<Paragraph small={ true }>
+													{ category }
+												</Paragraph>
 												<div class="hidden md:block">•</div>
 											)
 										else
 											return (
-												<Paragraph
-													text={ category }
-													small={ true }
-												/>
+												<Paragraph small={ true }>
+													{ category }
+												</Paragraph>
 											)
 
 									})
@@ -106,8 +103,7 @@ import Paragraph from "../../components/common/atom/Paragraph.astro"
 				})
 
 			}
-			</div>
-		</section>
-		<Footer />
-	</body>
-</html>
+		</div>
+	</Container>
+	<Footer />
+</Layout>

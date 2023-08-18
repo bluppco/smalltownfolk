@@ -1,4 +1,5 @@
 ---
+seo_description: We were quite kicked when we were asked to create a quirky identity for locally brewed beers. We decided to flip the notion and create a light-hearted animal kingdom.
 title: Brewing the Brand Identity for Hopshaus |  Small Town Folk — Small Town Folk
 description: Welcome to the jungle
 image: https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-cover.jpg?quality=80
@@ -19,11 +20,12 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
         ## Hopshaus
-        ##### Core Brand Assets
+        ###### CORE BRAND ASSETS
 
         Brand Identity\
         Packaging Design
@@ -34,80 +36,145 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
     </Column>
 </Column2>
 
-video
-
 <Column>
-        ## Making an impression 
-        
-       We were very inspired by the authenticity of the recipes that Sriracha used. When creating the visuals for this project, we went with a simplified take on wood cutting illustrations. Originally, these illustrations were created on blocks of wood and used a maximum of three different colours. We played with outlines and solid fills to create distinctive shapes, reminiscent of this style. Using these basic principles to create food illustrations and eventually, outdoor posters.
-
+    <div class="bg-zinc-200 h-96 flex justify-center items-center">_VimeoVideo_</div>
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-express-lunch-desktop-04.jpg?quality=80?quality=80&width=800 "a title")
+        ## Show us your wild side
+
+       Who doesn't love beer? We were quite kicked when we were asked to create a quirky identity for locally brewed beers. Sometime during our various brainstorming sessions, we remembered a classic - The Animal Farm. A book that most of us had read at some point in our lives. We decided to flip the notion and create a light-hearted animal kingdom. A quirky place where creatures like the droll raccoon and the uppity flamingo could roam free. That's how we conceptualised this whimsical world, with animals that would be true to the characteristics of the beers.
 </Column>
 
 <Column2>
     <Column>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-olroasted-stout-bottle.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-olroasted-stout-bottle.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus olroasted stout bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
         <ColumnImageSmall>
-            !![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-sassy-saison-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-sassy-saison-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus sassy saison label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
     </Column>
     <Column>
         <ColumnImageSmall>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-olroasted-stout-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-olroasted-stout-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus olroasted stout label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-sassy-saison-bottle.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-sassy-saison-bottle.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus sassy saison bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
     </Column>
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-coasters-desktop-02.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-coasters-desktop-02.jpg?quality=" + IMAGE_QUALITY }
+        alt="hopshaus coasters"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column2>
     <Column>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-witty-belgian-bottle-05.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-witty-belgian-bottle-05.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus witty belgian bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
         <ColumnImageSmall>
-            !![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-honey-maiden-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-honey-maiden-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus honey maiden label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
     </Column>
     <Column>
         <ColumnImageSmall>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-witty-belgian-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-witty-belgian-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus witty belgian label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-honey-maiden-bottle-04.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-honey-maiden-bottle-04.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus honey maiden bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
     </Column>
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-bottles-desktop-03.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-bottles-desktop-03.jpg?quality=" + IMAGE_QUALITY }
+        alt="hopshaus bottles"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column2>
     <Column>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-hip-hopster-bottle.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-hip-hopster-bottle.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus hip hopster bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
         <ColumnImageSmall>
-            !![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-basmati-bounty-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-basmati-bounty-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus basmati bounty label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
     </Column>
     <Column>
         <ColumnImageSmall>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-hip-hopster-label.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-hip-hopster-label.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus hip hopster label"
+                class="w-full h-full"
+            />
+
         </ColumnImageSmall>
         <ColumnImageLarge>
-            ![Alt text](https://blupp.b-cdn.net/smalltownfolk/hopshaus/tasveerien-hopshaus-basmati-bounty-bottle.jpg?quality=80?quality=80&width=800 "a title")
+            <img
+                src={ CDN_LINK + "hopshaus/tasveerien-hopshaus-basmati-bounty-bottle.jpg?quality=" + IMAGE_QUALITY }
+                alt="hopshaus basmati bounty bottle"
+                class="w-full h-full"
+            />
+
         </ColumnImageLarge>
     </Column>
 </Column2>

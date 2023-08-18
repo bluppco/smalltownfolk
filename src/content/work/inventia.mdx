@@ -1,4 +1,5 @@
 ---
+seo_description: For an organisation that was making its first attempt to have a consistent visual language, we used flat illustrations and visual aids to create a consistent visual language.
 title: Tapping into Visual Branding for Inventia | Small Town Folk — Small Town Folk
 description: Pushing the vertical bar
 image: https://blupp.b-cdn.net/smalltownfolk/inventia/tasveerien-inventia-cover-desktop.jpg?quality=80
@@ -19,11 +20,12 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
         ## Inventia
-        ##### Core Brand Assets
+        ###### CORE BRAND ASSETS
 
 
         Brand Guidelines\
@@ -38,7 +40,11 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/inventia/tasveerien-inventia-brand-manual.jpg?quality=80?quality=80&width=800 "a title") 
+    <img
+        src={ CDN_LINK + "inventia/tasveerien-inventia-brand-manual.jpg?quality=" + IMAGE_QUALITY }
+        alt="inventia brand manual"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
@@ -48,7 +54,11 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/inventia/tasveerien-inventia-smm-03.jpg?quality=80?quality=80&width=800 "a title") 
+    <img
+        src={ CDN_LINK + "inventia/tasveerien-inventia-smm-03.jpg?quality=" + IMAGE_QUALITY }
+        alt="inventia smm"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>
@@ -58,7 +68,11 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/inventia/tasveerien-inventia-brochure-desktop.jpg?quality=80?quality=80&width=800 "a title") 
+    <img
+        src={ CDN_LINK + "inventia/tasveerien-inventia-brochure-desktop.jpg?quality=" + IMAGE_QUALITY }
+        alt="inventia brochure"
+        class="w-full h-full"
+    />
 </Column>
 
 <Column>

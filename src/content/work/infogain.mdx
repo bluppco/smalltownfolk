@@ -1,4 +1,5 @@
 ---
+seo_description: The project was to create a consistent visual language to help achieve their business goals. Each of the forms visually represents a personality trait of the brand.
 title: Crafting a Visual Strategy for Infogain | Small Town Folk — Small Town Folk
 description: Engineering branding outcomes 
 image: https://blupp.b-cdn.net/smalltownfolk/tasveerien-infogain-cover-desktop.jpg?quality=80
@@ -19,11 +20,12 @@ import Column3 from "../../components/work/Column3.astro";
 import Column4 from "../../components/work/Column4.astro";
 import ColumnImageLarge from "../../components/work/ColumnImageLarge.astro";
 import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
+import { CDN_LINK, IMAGE_QUALITY, IMAGE_WIDTH } from "../../constants"
 
 <Column2>
     <Column>
         ## Infogain
-        ##### Core Brand Assets
+        ###### CORE BRAND ASSETS
 
         Brand Communication\
         Brand Guidelines\
@@ -38,7 +40,7 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column2>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/infogain/tasveerien-infogain-xtracs-desktop.jpg?quality=80?quality=80&width=800 "a title") video
+    <div class="bg-zinc-200 h-96 flex justify-center items-center">_VimeoVideo_</div>
 </Column>
 
 <Column>
@@ -49,17 +51,32 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 
 <Column>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/infogain/tasveerien-infogain-brand-book.jpg?quality=80?quality=80&width=800 "a title") 
+        <img
+        src={ CDN_LINK + "infogain/tasveerien-infogain-brand-book.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri a bake down memory lane"
+        class="w-full h-full"
+    />
+    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/?quality=80?quality=80&width=800 "a title") 
     </Column>
 </Column>
 
 <Column2>
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/infogain/tasveerien-infogain-whitepaper-02.jpg?quality=80?quality=80&width=800 "a title") 
+        <img
+        src={ CDN_LINK + "infogain/tasveerien-infogain-whitepaper-02.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri a bake down memory lane"
+        class="w-full h-full"
+    />
+    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/?quality=80?quality=80&width=800 "a title") 
     </Column>
 
     <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/infogain/tasveerien-infogain-business-cards.jpg?quality=80?quality=80&width=800 "a title")
+        <img
+        src={ CDN_LINK + "infogain/tasveerien-infogain-business-cards.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri a bake down memory lane"
+        class="w-full h-full"
+    />
+    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/?quality=80?quality=80&width=800 "a title")
     </Column>
 </Column2>
 
@@ -70,9 +87,19 @@ import ColumnImageSmall from "../../components/work/ColumnImageSmall.astro";
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/infogain/tasveerien-infogain-tote-desktop-03.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "infogain/tasveerien-infogain-tote-desktop-03.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri a bake down memory lane"
+        class="w-full h-full"
+    />
+    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/?quality=80?quality=80&width=800 "a title")
 </Column>
 
 <Column>
-    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/infogain/tasveerien-infogain-book-desktop-04.jpg?quality=80?quality=80&width=800 "a title")
+    <img
+        src={ CDN_LINK + "infogain/tasveerien-infogain-book-desktop-04.jpg?quality=" + IMAGE_QUALITY }
+        alt="amintiri a bake down memory lane"
+        class="w-full h-full"
+    />
+    ![Alt text](https://blupp.b-cdn.net/smalltownfolk/?quality=80?quality=80&width=800 "a title")
 </Column>
