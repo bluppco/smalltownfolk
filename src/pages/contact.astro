@@ -5,38 +5,33 @@ import H1 from "../components/common/atom/H1.astro"
 import Paragraph from "../components/common/atom/Paragraph.astro"
 import Head from "../components/common/Head.astro"
 import Button from "../components/common/Button.astro"
+import Layout from "../layouts/Layout.astro"
+import Container from "../layouts/Container.astro"
 ---
-<html lang="en">
-	<Head 
-		title="Contact — Small Town Folk"
-		description="Contact Small Town Folk for multi-disciplinary creative branding projects for your business. Talk to our team or schedule a meeting"
-		image=""
-	/>
-	<body>
-		<section class="min-h-[60vh]">
-			<Header
-				pathname= { Astro.url.pathname }
-				client:load
-			/>
-			<div class="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 mt-36 p-4 md:p-0 !py-40">
+<Layout
+	title="Contact — Small Town Folk"
+	description="Contact Small Town Folk for multi-disciplinary creative branding projects for your business. Talk to our team or schedule a meeting"
+	image=""
+>
+	<section class="min-h-[60vh]">
+		<Header
+			pathname= { Astro.url.pathname }
+			client:load
+		/>
+		<Container>
+			<section class="mt-36">
 				<div class="grid gap-8">
-					<H1
-						text="Let's work together."
-					/>
-					<Paragraph
-						text="We, at Small Town Folk, love saying hello. We have gotten some of our best projects by just walking up to people and having interesting conversations."
-					/>
-					<Paragraph
-						text="Say hello and watch as the world becomes a nicer, happier place."
-					/>
+					<H1>Let's work together.</H1>
+					<Paragraph>We, at Small Town Folk, love saying hello. We have gotten some of our best projects by just walking up to people and having interesting conversations.</Paragraph>
+					<Paragraph>Say hello and watch as the world becomes a nicer, happier place.</Paragraph>
 					<Button
 						text="Schedule Meeting"
 						link="https://calendly.com/avinash-stf/"
 						external={ true }
 					/>
 				</div>
-			</div>
-		</section>
-		<Footer />
-	</body>
-</html>
+			</section>
+		</Container>
+	</section>
+	<Footer />
+</Layout>
